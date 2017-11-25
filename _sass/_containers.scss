@@ -1,0 +1,38 @@
+.da-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.wide-container {
+    padding: 0 25px;
+}
+
+.full-width-section {
+    width: 100%;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    margin: 0;
+}
+
+.full-width-section.front-section {
+    padding: 0;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* smaller than desktop*/
+@media (max-width: 1010px) {
+    .da-container {
+        width: calc(100% - 50px);
+        width: calc(100vw - 50px);
+    }
+}
+
+/* Smaller than phablet */
+@media (max-width: 550px) {
+    .da-container {
+        width: calc(100% - 50px);
+        width: calc(100vw - 50px);
+    }
+}

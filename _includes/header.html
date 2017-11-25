@@ -1,0 +1,25 @@
+<header class="navbar">
+    <div class="da-container">
+        <a href="#" class="menu-icon" id="trigger-menu"><i class="fa fa-bars"></i> Menu</a>
+        <div class="u-cf"></div>
+    </div>
+    <nav class="fullscreen-navigation modal">
+        <div class="da-container menu-container">
+            <ul>
+                {% for link in site.data.navigation %}
+                    {% if link.url contains 'http' %}
+                    {% assign domain = '' %}
+                    {% else %}
+                    {% assign domain = site.url %}
+                    <li><a class="menu-item close-menu" href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <span>
+                <a class="social" href="https.//youtube.com/DarioGartmannCH" target="_blank">YouTube</a>
+                <a class="social" href="https://instagram.com/dario.visuals" target="_blank">Instagram</a>
+                <a class="social" href="https://unsplash.com/dariogartmann" target="_blank">Unsplash</a>
+            </span>
+        </div>
+    </nav>
+</header>

@@ -1,0 +1,84 @@
+/* Navigation and Header
+--------------------------------- */
+header {
+    z-index: $OVERLAY;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 75px;
+    position: absolute;
+    transition: all 200ms ease;
+    border: none;
+}
+
+header h1.sitetitle {
+    float: left;
+    line-height: 75px;
+    font-size: 3rem;
+}
+header .sitetitle a {
+    text-decoration: none;
+    color: $white;
+}
+header .menu-icon {
+    line-height: 75px;
+    color: $black;
+    float: right;
+    text-decoration: none;
+}
+
+nav.fullscreen-navigation {
+    z-index: $OVERLAY;
+    background-color: rgba(255, 255, 255, 0.95);
+    height: 100%;
+    height: 100vh;
+    width: 100%;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    position: fixed;
+    transform-origin: top;
+    transform: rotateX(180deg);
+    transition: transform 500ms ease;
+}
+nav.fullscreen-navigation ul {
+    list-style: none;
+}
+nav.fullscreen-navigation ul li a {
+    text-decoration: none;
+    font-size: 5rem;
+    font-weight: 400;
+    line-height: 5.1rem;
+    color: $black;
+}
+
+.menu-item, .menu-item:hover {
+    color: $black;
+    position: relative; 
+}
+.menu-item:before {
+    content: "";
+    position: absolute;
+    background: rgba($primary, 0.5);
+    left: 0;
+    bottom: 10%;
+    right: 100%;
+    top: 60%;
+    z-index: -1;
+    transition: right 300ms ease-in-out; 
+}
+.menu-item:hover:before {
+    right: 0; 
+}
+
+.social {
+    text-decoration: none;
+    color: $accent;
+    font-size: 2rem;
+    margin-right: 25px;
+}
+
+
+.menu-container {
+    margin-top: 250px;
+}

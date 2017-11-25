@@ -1,0 +1,18 @@
+<footer class="default-footer">
+    <div class="da-container">
+        <div class="footer-films">
+            <p>Some of my projects:</p>
+            {% for film in site.films | limit:2 %}
+            <article class="film-item">
+                <h2><a class="fancylink" href="{{ film.url }}">{{ film.title }}</a></h2>
+                <span>Rel</span> {{ film.released }}
+                <span>Type</span> {{ film.type }}
+            </article>
+            {% endfor %}
+        </div>
+        <div class="footer-social">
+            <br/>
+            <p>&copy; 2018 Dario Gartmann</p>
+        </div>
+    </div>
+</footer>

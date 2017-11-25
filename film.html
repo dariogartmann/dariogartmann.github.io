@@ -1,0 +1,15 @@
+---
+layout: film
+title: Film
+---
+<section class="full-width-section film-section">
+    <div class="da-container film-list">
+        {% for film in site.films %}
+        <article class="film-item">
+            <h2><a class="fancylink" href="{{ film.url }}">{{ film.title }}</a></h2>
+            <span>Rel</span> {{ film.released }}
+            <span>Type</span> {{ film.type }}
+        </article>
+        {% endfor %}
+    </div>
+</section>

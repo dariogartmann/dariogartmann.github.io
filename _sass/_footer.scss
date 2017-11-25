@@ -1,0 +1,18 @@
+.default-footer {
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: -1;
+    padding: 75px 0;
+}
+
+.footer-films {
+    position: relative;
+}
+.footer-social {
+    p {
+        color: $accent;
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,149 @@
+@import "variables";
+@import "typography";
+
+@import "libs/normalize";
+@import "libs/skeleton";
+@import "libs/lumos";
+
+@import "containers";
+@import "navigation";
+@import "footer";
+
+@import "pages/about";
+@import "pages/photography";
+@import "pages/film";
+
+/* Basic styling
+--------------------------------- */
+body {
+    margin: 0;
+    background-color: $white; 
+    font-family: 'Rubik', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+main {
+    min-height: 100vh;
+    background-color: $white;
+    box-shadow: 0px 3px 25px #D3D3D3;
+    margin-bottom: 400px;
+    z-index: 2;
+}
+
+/* Fancy link
+--------------------------------- */
+.fancylink {
+    text-decoration: none;
+    color: $black;
+    position: relative;
+    background: none;    
+}
+.fancylink:hover {
+    color: $black;
+}
+.fancylink:before {
+    content: "";
+    position: absolute;
+    background: rgba($primary, 0.5);
+    left: 0;
+    bottom: 10%;
+    right: 100%;
+    top: 60%;
+    z-index: -1;
+    transition: right 300ms ease-in-out; 
+}
+.fancylink:hover:before {
+    right: 0; 
+}
+
+/* Frontpage 
+--------------------------------- */
+.frontpage {
+    background-image: url("/assets/images/mountain.png");
+    background-position: bottom;
+    background-size: cover;
+
+    height: 100vh;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+
+    text-align: center;
+}
+
+/* Sections
+--------------------------------- */
+section h2 {
+    margin-bottom: 0;
+}
+
+hr {
+    margin-left: 0;
+    text-align: left;
+    max-width: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 2px;
+    background-color: $primary;
+    border: none;
+}
+
+/* Utils
+--------------------------------- */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+ 
+.fade-in {
+	opacity:0;  /* make things invisible upon start */
+	-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+ 
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+ 
+	-webkit-animation-duration:0.75s;
+	-moz-animation-duration:0.75s;
+	animation-duration:0.75s;
+}
+
+::-moz-selection { 
+    color: $white;
+    background: $black;
+}
+
+::selection {
+    color: $white; 
+    background: $black;
+}
+
+/* Media query
+--------------------------------- */
+/* Smaller than mobile */
+@media (max-width: 400px) {
+
+}
+
+/* Smaller than phablet */
+@media (max-width: 550px) {
+
+}
+
+/* Smaller than tablet */
+@media (max-width: 750px) {
+
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}

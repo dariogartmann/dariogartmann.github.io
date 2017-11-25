@@ -1,0 +1,30 @@
+$(document).ready(function(){
+    var isMenuOpen = false;
+
+    // listener
+    $('.menu-icon').on('click', function(e) {
+        e.preventDefault();
+        toggleMenu();
+    });
+
+    $('.close-menu, .modal').on('click', function(e) {
+        e.stopPropagation();
+        toggleMenu();
+    });
+
+    // toggle
+    function toggleMenu() {
+        switch(isMenuOpen) {
+            case true:
+                $('.modal').css('transform', 'rotateX(180deg)');
+                isMenuOpen = false;
+                break;
+            case false:
+                $('.modal').css('transform', 'rotateX(0deg)');
+                isMenuOpen = true;
+                break;
+            default:
+                break;
+        }
+    }
+});
