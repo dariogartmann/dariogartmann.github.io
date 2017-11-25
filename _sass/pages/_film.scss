@@ -28,3 +28,18 @@
         display: inline;
     }
 }
+
+.film-detail {
+	padding-bottom: 75px;
+
+	.film-detail-header {
+		p {
+			color: $accent;
+	
+			span {
+				color: $black;
+			}
+		}
+	}
+}
+

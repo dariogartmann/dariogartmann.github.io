@@ -1,4 +1,21 @@
 ---
 layout: default
 ---
-{{ content }}
+<section class="film-detail" id="{{ page.title }}">
+    <div class="da-container">
+        <div class="quote film-detail-header">
+            <h2>{{ page.title }}</h2>
+            <p>a <span>{{ page.type }}</span> released in <span>{{ page.released }}</span></p>
+        </div>
+    </div>
+    <div class="full-width-section">
+        <div class=" wide-container">
+            <div  class="videoWrapper">
+                    <iframe class="youtube" src="https://www.youtube.com/embed/{{ page.youtube-id }}" frameborder="0" allowfullscreen> </iframe>
+                </div>
+        </div>
+    </div>
+    <div class="da-container">
+        {{ content }}
+    </div>
+</section>
