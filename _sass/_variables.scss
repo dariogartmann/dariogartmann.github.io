@@ -1,8 +1,12 @@
-$primary: #E54B4B;  //109BE8 E54B4B
+$primary: #109BE8;  //109BE8 E54B4B
 $gray: rgb(241, 241, 241);
 $black: #222; 
 $white: #FFF;
 $accent: darken($gray, 40%);
+
+// $darkgray: rgb(44, 44, 44);
+$darkgray: rgb(13, 13, 13);
+$lightgray: rgb(114, 114, 114);
 
 $BACKGROUND: 1;
 $MIDGROUND: 50;
