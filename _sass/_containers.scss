@@ -3,20 +3,46 @@
     margin: 0 auto;
 }
 
+.container {
+    text-align: left;
+
+    &.flex {
+        display: flex;
+
+        .half {
+            width: 50%;
+        }
+    }
+}
+
+.image-container {
+    padding: 0;
+    margin: 0;
+}
+
+.quote-container {
+    background-color: $primary;
+    padding: 150px 0;
+
+    .quote {
+        text-align: center;
+        
+        h2 {
+            color: $white;
+        }
+    }
+}
+
 .wide-container {
     padding: 0 25px;
 }
 
 .full-width-section {
     width: 100%;
-    padding-bottom: 75px;
     margin: 0;
 }
 
-.quote {
-    text-align: center;
-    padding: 150px 25px;
-}
+
 
 .full-width-section.front-section {
     padding: 0;

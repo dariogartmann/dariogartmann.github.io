@@ -9,29 +9,24 @@ header {
     position: absolute;
     transition: all 200ms ease;
     border: none;
-}
 
-header h1.sitetitle {
-    float: left;
-    line-height: 75px;
-    font-size: 3rem;
-}
-header .sitetitle a {
-    text-decoration: none;
-    color: $white;
-}
-header .menu-icon {
-    line-height: 75px;
-    color: $black;
-    float: right;
-    text-decoration: none;
-}
+    h1.sitetitle {
+        float: left;
+        line-height: 75px;
+        font-size: 3rem;
 
-header .go-back {
-    line-height: 75px;
-    color: $black;
-    float: left;
-    text-decoration: none;
+        a {
+            text-decoration: none;
+            color: $white;
+        }
+    }
+
+    .menu-icon {
+        line-height: 75px;
+        color: $black;
+        float: right;
+        text-decoration: none;
+    }
 }
 
 nav.fullscreen-navigation {

@@ -23,11 +23,10 @@ body {
 
 img {
     max-width: 100%;
+    display: block;
 }
 
 main {
-    min-height: 100vh;
-    background-color: $white;
     z-index: 2;
 }
 
@@ -57,39 +56,16 @@ main {
     right: 0; 
 }
 
-/* Frontpage 
---------------------------------- */
-.frontpage {
-    background-image: url("/assets/images/mountain.png");
-    background-position: bottom;
+.image-header {
+    background-position: center;
     background-size: cover;
-
-    height: 100vh;
-    padding: 0;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column wrap;
-
-    text-align: center;
+    min-height: 402px;
 }
 
-/* Sections
---------------------------------- */
-section h2 {
-    margin-bottom: 0;
-}
-
-hr {
-    margin-left: 0;
-    text-align: left;
-    max-width: 200px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    height: 2px;
-    background-color: $primary;
-    border: none;
+article.text {
+    max-width: 640px;
+    padding: 125px 25px;
+    margin: 0 auto;
 }
 
 /* Utils
