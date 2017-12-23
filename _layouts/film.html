@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<section class="full-width-section">
+    <div class="da-container">
+        <article class="text">
+            <h2>{{ page.title }}</h2>
+            {% if page.tags %}
+                {% for tag in page.tags %}
+                    <span class="tag">{{ tag }}</span>
+                {% endfor %}
+            {% endif %}
+            <p>
+                {{ page.description }}
+            </p>
+            <a class="fancylink" href="https://youtu.be/{{ page.youtube-id }}" target="_blank">Watch <i class="fa fa-angle-right"></i></a>
+        </article>
+    </div>
+</section>
+<section class="full-width-section film-content">
+    {{ content }}
+</section>
+
