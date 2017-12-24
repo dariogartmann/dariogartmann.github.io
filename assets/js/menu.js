@@ -16,11 +16,11 @@ $(document).ready(function(){
     function toggleMenu() {
         switch(isMenuOpen) {
             case true:
-                $('.modal').css('transform', 'rotateX(180deg)');
+                $('.modal').css('top', '-100%');
                 isMenuOpen = false;
                 break;
             case false:
-                $('.modal').css('transform', 'rotateX(0deg)');
+                $('.modal').css('top', '0');
                 isMenuOpen = true;
                 break;
             default:

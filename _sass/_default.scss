@@ -27,10 +27,6 @@ img {
     display: block;
 }
 
-main {
-    z-index: 2;
-}
-
 /* Fancy link
 --------------------------------- */
 .fancylink {
@@ -42,10 +38,11 @@ main {
 .fancylink:hover {
     color: $black;
 }
+
 .fancylink:before {
     content: "";
     position: absolute;
-    background: rgba($primary, 0.5);
+    background-color: rgba($primary, 0.5);
     left: 0;
     bottom: 10%;
     right: 100%;
@@ -67,6 +64,27 @@ article.text {
     max-width: 640px;
     padding: 125px 25px;
     margin: 0 auto;
+}
+
+main.dark {
+    section.full-width-section {
+        background-color: $black;
+        p, a.fancylink {
+            color: $white;
+        }
+
+        a.fancylink:before {
+            background-color: $primary;
+        }
+
+        span {
+            color: $gold;
+        }
+        h2, h3 {
+            color: $white;
+        }
+    }
+    
 }
 
 /* Utils

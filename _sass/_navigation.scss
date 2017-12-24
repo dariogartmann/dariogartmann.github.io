@@ -31,17 +31,16 @@ header {
 
 nav.fullscreen-navigation {
     z-index: $OVERLAY;
-    background-color: rgba(255, 255, 255, 0.95);
+    // background-color: rgba(255, 255, 255, 0.95);
+    background-color: $darkgray;
     height: 100%;
     height: 100vh;
     width: 100%;
     width: 100vw;
-    top: 0;
+    top: -100%;
     left: 0;
     position: fixed;
-    transform-origin: top;
-    transform: rotateX(180deg);
-    transition: transform 500ms ease;
+    transition: all 400ms ease-in-out;
 }
 nav.fullscreen-navigation ul {
     list-style: none;
@@ -51,11 +50,11 @@ nav.fullscreen-navigation ul li a {
     font-size: 5rem;
     font-weight: 400;
     line-height: 5.1rem;
-    color: $black;
+    color: $lightgray;
 }
 
 .menu-item, .menu-item:hover {
-    color: $black;
+    color: $lightgray;
     position: relative; 
 }
 .menu-item:before {
@@ -79,7 +78,6 @@ nav.fullscreen-navigation ul li a {
     font-size: 2rem;
     margin-right: 25px;
 }
-
 
 .menu-container {
     margin-top: 250px;

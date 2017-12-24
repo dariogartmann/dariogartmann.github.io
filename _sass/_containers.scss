@@ -7,20 +7,20 @@
     text-align: left;
     max-width: 960px;
     margin: 0 auto;
-
-    &.flex {
-        display: flex;
-
-        .third {
-            width: 33.3333%;
-        }
-
-        .half {
-            width: 50%;
-        }
-    }
 }
 
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+
+    .third {
+        width: 33.3333%;
+    }
+
+    .half {
+        width: 50%;
+    }
+}
 
 /* Smaller than phablet */
 @media (max-width: 550px) {
@@ -32,40 +32,9 @@
     }
 }
 
-.image-container {
-    padding: 0;
-    margin: 0;
-}
-
-.quote-container {
-    background-color: $primary;
-    padding: 150px 0;
-
-    .quote {
-        text-align: center;
-        
-        h2 {
-            color: $white;
-        }
-    }
-}
-
-.wide-container {
-    padding: 0 25px;
-}
-
 .full-width-section {
     width: 100%;
     margin: 0;
-}
-
-
-
-.full-width-section.front-section {
-    padding: 0;
-    overflow: hidden;
-    height: 100vh;
-    width: 100vw;
 }
 
 /* smaller than desktop*/
