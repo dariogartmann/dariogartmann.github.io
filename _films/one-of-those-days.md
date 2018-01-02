@@ -6,7 +6,7 @@ type: Shortfilm
 youtube-id: FH6AU5l3WOE
 tags: ['travel', 'video']
 featured-image: "/assets/images/gallery/full/firespin.jpg"
-layout: film
+layout: project
 ---
 
 ## hello

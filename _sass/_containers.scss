@@ -20,6 +20,10 @@
     .half {
         width: 50%;
     }
+
+    .full {
+        width: 100%;
+    }
 }
 
 /* Smaller than phablet */
@@ -27,8 +31,9 @@
     .container.flex {
         display: block;
 
-        .third { width: 100%; }
-        .half { width: 100%; }
+        .third { width: 100%; margin-bottom: 25px; }
+        .half { width: 100%; margin-bottom: 25px; }
+        .full { margin-bottom: 25px; }
     }
 }
 

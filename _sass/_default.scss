@@ -13,7 +13,7 @@
 @import "pages/about";
 @import "pages/home";
 @import "pages/photography";
-@import "pages/film";
+@import "pages/projects";
 
 /* Basic styling
 --------------------------------- */
@@ -34,6 +34,7 @@ img {
     color: $black;
     position: relative;
     background: none;    
+    z-index: 2;
 }
 .fancylink:hover {
     color: $black;
@@ -47,7 +48,7 @@ img {
     bottom: 10%;
     right: 100%;
     top: 60%;
-    z-index: -1;
+    z-index: 1;
     transition: right 300ms ease-in-out; 
 }
 .fancylink:hover:before {
@@ -74,11 +75,12 @@ main.dark {
         }
 
         a.fancylink:before {
-            background-color: $primary;
+            background-color: rgba($primary, .5);
+            z-index: 1;
         }
 
         span {
-            color: $gold;
+            color: $primary;
         }
         h2, h3 {
             color: $white;

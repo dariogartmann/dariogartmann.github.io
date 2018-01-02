@@ -8,4 +8,17 @@ footer {
         color: $lightgray;
         margin-bottom: 0;
     }
+
+    a {
+        color: $lightgray;
+        text-decoration: none;
+    }
+
+    a:hover{
+        color:lighten($lightgray, 20);
+    }
+
+    span.tag {
+        color: $primary;
+    }
 }

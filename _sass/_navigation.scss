@@ -60,11 +60,11 @@ nav.fullscreen-navigation ul li a {
 .menu-item:before {
     content: "";
     position: absolute;
-    background: rgba($primary, 0.5);
+    background: rgba($primary, .5);
     left: 0;
-    bottom: 10%;
+    bottom: 15%;
     right: 100%;
-    top: 60%;
+    top: 70%; 
     z-index: -1;
     transition: right 300ms ease-in-out; 
 }
@@ -74,7 +74,7 @@ nav.fullscreen-navigation ul li a {
 
 .social {
     text-decoration: none;
-    color: $accent;
+    color: $primary;
     font-size: 2rem;
     margin-right: 25px;
 }
