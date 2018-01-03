@@ -16,7 +16,7 @@ featured-image: "/assets/images/filming.png"
 </section>
 <section class="full-width-section film-section">
     <div class="flex">
-        {% for film in site.films %}
+        {% for film in site.projects %}
         <article class="film-item third" style="background-image: url('{{site.url}}{{ film.featured-image }}')">
             <h2><a class="fancylink" href="{{ film.url }}">{{ film.title }}</a></h2>
             <span>Rel</span> {{ film.released }}
