@@ -16,7 +16,7 @@
 
     <body class="{% if page.featured-image %}has-featured-image{% endif %} {{ page.scheme }}">
         {% include header.html %}
-        <main class="fade-in">
+        <main class="default-content fade-in">
             {% if page.featured-image %}
                 <section class="image-header" style="background-image: url({{ page.featured-image }})"></section>
             {% else %}

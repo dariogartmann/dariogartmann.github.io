@@ -1,17 +1,22 @@
-footer {
+footer.default-footer {
+    left: 0;
+    bottom: 0;
     background-color: $darkgray;
+    background-size: cover;
+    background-position: center;
     width: 100%; 
-    padding: 75px 0;
     color: $lightgray;
+    z-index: -1;
+    padding: 75px 0;
 
-    p {
-        color: $lightgray;
-        margin-bottom: 0;
-    }
+    transition: background-image 1s ease;
 
     a {
         color: $lightgray;
         text-decoration: none;
+    }
+    p {
+        margin: 0;
     }
 
     a:hover{
@@ -20,5 +25,9 @@ footer {
 
     span.tag {
         color: $primary;
+    }
+
+    ul.project-list li a {
+        color: $lightgray;
     }
 }

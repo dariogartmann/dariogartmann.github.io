@@ -21,13 +21,18 @@ body {
     margin: 0;
     background-color: $white; 
 }
-main {
-    background-color: $white;
-}
 
 img {
     max-width: 100%;
     display: block;
+}
+
+hr {
+    height: 1px;
+    background-color: $black;
+    border: none;
+    text-shadow: none;
+    box-shadow: none;
 }
 
 /* Fancy link
@@ -66,7 +71,7 @@ img {
 
 article.text {
     max-width: 640px;
-    padding: 125px 25px;
+    padding: 125px 0;
     margin: 0 auto;
 }
 
@@ -122,26 +127,3 @@ body.dark main {
     color: $white; 
     background: $black;
 }
-
-/* Media query
---------------------------------- */
-/* Smaller than mobile */
-@media (max-width: 400px) {
-
-}
-
-/* Smaller than phablet */
-@media (max-width: 550px) {
-
-}
-
-/* Smaller than tablet */
-@media (max-width: 750px) {
-
-}
-
-/* Larger than desktop */
-@media (min-width: 1000px) {}
-
-/* Larger than Desktop HD */
-@media (min-width: 1200px) {}

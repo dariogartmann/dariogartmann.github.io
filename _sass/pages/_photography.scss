@@ -1,6 +1,7 @@
 .photo-section {
     background-color: $white;
     color: $black;
+    min-height: 100vh;
 }
 
 .grid {
@@ -27,4 +28,11 @@
 }
 .item.ultrawide {
     width: calc(100% - 25px);
+}
+
+// smaller than tablet
+@media (max-width: 750px) {
+    .item, .item.wide, .item.ultrawide {
+        width: calc(100% - 25px);
+    }
 }

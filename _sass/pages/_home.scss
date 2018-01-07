@@ -6,14 +6,13 @@
     width: 100vw;
     text-align: center;
 
-    background-image: url("../images/mountain.png");
+    background-image: url('/assets/images/dario-berlin.png');
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
 
     .hero {
         z-index: 4;
-        
 
         .hero_links {
             font-size: 2.5rem;
@@ -25,14 +24,12 @@
             }
         }
 
-
         h1.hero_title {
             font-size: 8rem;
             font-weight: 600;
             font-family: "Open Sans";
             text-transform: uppercase;
             letter-spacing: 15px;
-            // text-shadow: 0px 0px 1px #000;
             color: $white;
         }  
     }
@@ -49,4 +46,15 @@ body.home {
     position: absolute;
     top: 50%;
     left: 50%;
+}
+// smaller than tablet
+@media (max-width: 750px) {
+    .home-section {
+        .hero {
+            h1.hero_title {
+                font-size: 5rem;
+                letter-spacing: 5px;
+            }
+        }
+    }
 }
