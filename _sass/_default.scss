@@ -21,6 +21,9 @@ body {
     margin: 0;
     background-color: $white; 
 }
+main {
+    background-color: $white;
+}
 
 img {
     max-width: 100%;
@@ -67,7 +70,7 @@ article.text {
     margin: 0 auto;
 }
 
-main.dark {
+body.dark main {
     section.full-width-section {
         background-color: $black;
         p, a.fancylink {

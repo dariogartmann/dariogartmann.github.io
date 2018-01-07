@@ -1,38 +1,57 @@
 /* Navigation and Header
 --------------------------------- */
-header {
+header.navbar {
     z-index: $OVERLAY;
     left: 0;
     top: 0;
     width: 100%;
     height: 75px;
-    position: absolute;
+    position: fixed;
     transition: all 200ms ease;
     border: none;
+    background-color: $white;
 
     h1.sitetitle {
         float: left;
-        line-height: 75px;
-        font-size: 3rem;
+        text-transform: uppercase;
+        margin: 0;
 
         a {
+            color: $black;
             text-decoration: none;
-            color: $white;
+            font-size: 2rem;
+            letter-spacing: 2px;
+            font-weight: 600;
         }
     }
 
     .menu-icon {
         line-height: 75px;
-        color: $white;
+        color: $black;
         float: right;
         text-decoration: none;
+        font-weight: 600;
+    }
+}
+body.has-featured-image header.navbar {
+    background-color: transparent;
+}
+
+body.has-featured-image header.navbar h1.sitetitle a, body.has-featured-image header.navbar .menu-icon {
+    color: $white;
+}
+
+body header.navbar.sticky {
+    background-color: $white;
+
+    h1.sitetitle a, .menu-icon {
+        color: $black;
     }
 }
 
 nav.fullscreen-navigation {
     z-index: $OVERLAY;
-    // background-color: rgba(255, 255, 255, 0.95);
-    background-color: $darkgray;
+    background-color: $white;
     height: 100%;
     height: 100vh;
     width: 100%;
@@ -50,11 +69,11 @@ nav.fullscreen-navigation ul li a {
     font-size: 5rem;
     font-weight: 400;
     line-height: 5.1rem;
-    color: $lightgray;
+    color: $black;
 }
 
 .menu-item, .menu-item:hover {
-    color: $lightgray;
+    color: $black;
     position: relative; 
 }
 .menu-item:before {
@@ -62,9 +81,9 @@ nav.fullscreen-navigation ul li a {
     position: absolute;
     background: rgba($primary, .5);
     left: 0;
-    bottom: 15%;
+    bottom: 10%;
     right: 100%;
-    top: 70%; 
+    top: 60%; 
     z-index: -1;
     transition: right 300ms ease-in-out; 
 }

@@ -8,15 +8,15 @@
         <meta name="author" content="Dario Gartmann" />
         <meta name="keywords" content="" />
         
-        <meta name="theme-color" content="#E54B4B">
+        <meta name="theme-color" content="#222">
 
         <link rel="stylesheet" href="{{ site.url }}/assets/css/main.css">
 		<script src="https://use.fontawesome.com/f0ef56809a.js"></script>
     </head>
 
-    <body>
+    <body class="{% if page.featured-image %}has-featured-image{% endif %} {{ page.scheme }}">
         {% include header.html %}
-        <main class="fade-in {{ page.scheme }}">
+        <main class="fade-in">
             {% if page.featured-image %}
                 <section class="image-header" style="background-image: url({{ page.featured-image }})"></section>
             {% else %}

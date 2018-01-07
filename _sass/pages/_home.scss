@@ -3,23 +3,29 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: 100%;
-    background-color: $white;
-    color: $black;
+    width: 100vw;
     text-align: center;
 
     background-image: url("../images/mountain.png");
     background-size: cover;
     background-position: bottom;
+    background-repeat: no-repeat;
 
     .hero {
-        h2.hero_subtitle {
-            color: $primary;
+        z-index: 4;
+        
+
+        .hero_links {
             font-size: 2.5rem;
-            text-transform: lowercase;
-            letter-spacing: 5px;
+            color: $primary;
+
+            a.fancylink {
+                color: $white;
+                font-weight: 600;
+            }
         }
-    
+
+
         h1.hero_title {
             font-size: 8rem;
             font-weight: 600;
@@ -27,20 +33,20 @@
             text-transform: uppercase;
             letter-spacing: 15px;
             // text-shadow: 0px 0px 1px #000;
-            color: $black;
+            color: $white;
         }  
-
-        .hero_links {
-            font-size: 2.5rem;
-            
-            a.fancylink {
-                color: $darkgray;
-        
-                &:hover {
-                    color: rgb(114, 114, 114);
-                }
-            }
-        }
-        
     }
+} 
+
+body.home {
+    overflow: hidden;
+}
+
+.carousel-video {
+    min-height: 100%;
+    min-width: 100%;
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
 }

@@ -27,4 +27,18 @@ $(document).ready(function(){
                 break;
         }
     }
+
+    var $banner = $('.navbar');
+    var $win = $(window);
+    var winH = $win.height();
+
+    $win.on("scroll", function () {
+        if ($(this).scrollTop() >= 325) {
+            $banner.addClass("sticky");
+        } else {
+            $banner.removeClass("sticky");
+        }
+    }).on("resize", function(){ 
+       winH = $(this).height(); 
+    });
 });
