@@ -9,7 +9,8 @@ span.tag {
 }
 
 figure.wide {
-	margin: 0;
+	margin: 0 25px;
+	max-width: calc(100% - 50px);
 }
 
 .half.project-item {
@@ -25,6 +26,11 @@ figure.wide {
 @media (max-width: 550px) {
     .half.project-item {
 		margin: 0;
+	}
+
+	figure.wide {
+		margin: 0;
+		max-width: 100%;
 	}
 }
 
