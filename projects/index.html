@@ -1,28 +1,16 @@
 ---
 layout: page
 title: Projects
-featured-image: "/assets/images/filming.png"
 ---
 <section class="full-width-section light">
-    <div class="da-container flex" id="bla">
-        <div class="half">
-            <article class="text">
-                <h2>projects.</h2>
-                <span class="tag">videos. photography. web.</span>
-            </article>
-        </div>
-        <div class="half">
-            <article class="text">
-                <ul class="project-list">
-                {% for project in site.projects %}
-                <li>
-                    <a href="{{ project.url }}" data-image="{{site.url}}{{ project.featured-image }}" data-target="#bla">
-                        {{ project.title }}
-                    </a>
-                </li>
-                {% endfor %}
-                </ul>
-            </article>
-        </div>
+    <div class="full-width-container flex">
+        {% for project in site.projects %}
+        <article class="half project-item">
+            <a href="{{ project.url }}">
+                <img src="{{site.url}}{{ project.featured-image }}" alt="text" />
+                <p>{{ project.title }}</p>
+            </a>
+        </article>
+        {% endfor %}
     </div>
 </section>
