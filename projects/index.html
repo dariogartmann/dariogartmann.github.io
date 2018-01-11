@@ -7,10 +7,22 @@ title: Projects
         {% for project in site.projects %}
         <article class="half project-item">
             <a href="{{ project.url }}">
-                <img src="{{site.url}}{{ project.featured-image }}" alt="text" />
+                <img src="{{site.url}}{{ project.featured-image }}" alt="{{project.title}}" />
                 <p>{{ project.title }}</p>
             </a>
         </article>
         {% endfor %}
     </div>
 </section>
+<section class="full-width-section">
+        <div class="container">
+            <article class="text">
+                <h2>Get In Touch</h2>
+                <p>
+                    Whether you want to work with me or just want to say hello – feel free to send me an email.
+                    You can also reach me through the my social media channels.
+                </p>
+                <a href="mailto:hello@dariogartmann.ch" class="button">Say Hello <i class="fa fa-send"></i></a>
+            </article>
+        </div>
+    </section>

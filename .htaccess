@@ -1,8 +1,10 @@
 # Rewrite requests from *.html to *
+RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.+)$ $1.html [L,QSA]
+
 
 # 1 Month content cache for most static assets
 <filesMatch ".(css|jpg|jpeg|png|gif|js|ico)$">

@@ -17,7 +17,7 @@ title: Dario Gartmann
 email: hello@dariogartmann.ch
 description: > # this means to ignore newlines until "baseurl:"
   I'm Dario Gartmann. A web designer, photographer and filmmaker based in Switzerland.
-  All kinds of creative work is cool.
+  This portfolio showcases some of my work.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://dario.works" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: dario_gartmann
@@ -34,6 +34,8 @@ sass:
 collections:
   projects:
     output: true
+
+permalink: pretty
 
 gems:
   - jekyll-feed
