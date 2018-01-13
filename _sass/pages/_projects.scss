@@ -8,36 +8,67 @@ span.tag {
 	font-size: 1rem;
 }
 
-figure.wide {
-	margin: 0 25px;
-	max-width: calc(100% - 50px);
-}
-
-.half.project-item {
+.half.project-container {
 	width: calc(50% - 12.5px);
-}
+	margin-bottom: 25px;
+	position: relative;
 
-.project-item:nth-of-type(odd) {
+	a.project {
+		display: block;
+		padding-bottom: 25px;
+		text-decoration: none;
+		color: $black;
+		font-size: 2rem;
+		text-align: center;
+		font-weight: 700;
+
+		p {
+			margin: 0;
+			padding: 10px 25px 0 25px;
+
+			&.type {
+				color: $accent;
+				font-weight: 500;
+				text-align: center;
+				float: none;
+				padding-top: 0;
+				font-size: 1.2rem;
+				line-height: 1.5rem;
+			}
+		}
+	}
+}
+.project-container:nth-of-type(odd) {
 	margin-right: 12.5px;
 }
-.project-item:nth-of-type(even) {
+.project-container:nth-of-type(even) {
 	margin-left: 12.5px;
 }
-@media (max-width: 550px) {
-    .half.project-item {
-		margin: 0;
-	}
 
-	figure.wide {
-		margin: 0;
-		max-width: 100%;
+// Images
+figure.imagelist {
+	margin: 0 25px 125px 25px;
+	max-width: calc(100% - 50px);
+	display: flex;
+	flex-flow: row wrap;
+	
+	img {
+		width: 100%;
+		align-self: center;
+	}
+	img.half {
+		width: 50%;
+	}
+	img.third {
+		width: 33.333%;
 	}
 }
 
 .film-content {
+	// Normal Text
 	h2 {
 		max-width: 640px;
-		padding: 125px 25px 0px 25px;
+		padding: 0 25px 0px 25px;
 		margin: 0 auto 2rem auto;
 
 	}
@@ -46,5 +77,57 @@ figure.wide {
 		padding: 0 25px 125px 25px;
 		margin: 0 auto;
 		line-height: 2.75rem;
+	}
+
+	// Code
+	div.highlighter-rouge {
+		margin: 0 auto;
+		max-width: 640px;
+		padding: 0 25px 125px 25px;
+	}
+	
+	// BlockQuote
+	blockquote {
+		max-width: 640px;
+		padding: 0 25px 125px 25px;
+		margin: 0 auto;
+		line-height: 2.75rem;
+
+		p {
+			border-left: 5px solid $primary;
+			
+			padding-right: 0;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			padding-left: 25px;
+			
+			font-size: 2.5rem;
+			font-weight: 700;
+
+			&:before, &:after {
+				content: "\"";
+				color: $lightgray;
+			}
+		}
+	}
+	
+}
+
+@media (max-width: 650px) {
+    .half.project-container {
+		margin: 0;
+	}
+
+	.half.project-container a.project:last-of-type {
+		padding-bottom: 0;
+	}
+		
+	figure.imagelist {
+		margin: 0;
+		max-width: 100%;
+
+		img, img.half, img.third {
+			width: 100%;
+		}
 	}
 }

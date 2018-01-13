@@ -4,13 +4,12 @@ description: "In autumn 2017 me and two friends spent four days in Berlin. Of co
 released: 2017
 type: Travel Video
 youtube-id: 746bSKb7F-M
-tags: ['travel', 'video']
-featured-image: "/assets/images/gallery/full/DSC03090.jpg"
+tags: ['travel', 'germany', 'exploring']
+featured-image: "/assets/images/gallery/thumb/berlin.jpg"
 layout: project
-scheme: light
 ---
-<figure class="wide">
-    <img src="{{ site.url }}/assets/images/projects/berlin/berlin1.png" alt="Berlin Subway" />
+<figure class="imagelist">
+    <img src="{{ site.url }}/assets/images/projects/berlin/berlin_subway.jpg" alt="Berlin Subway" />
 </figure>
 
 ## Modul 152

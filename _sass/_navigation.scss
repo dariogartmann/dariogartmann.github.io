@@ -50,14 +50,6 @@ body header.navbar.sticky {
     }
 }
 
-body.dark header.navbar.sticky {
-    background-color: $black;
-
-    h1.sitetitle a, .menu-icon {
-        color: $white;
-    }
-}
-
 nav.fullscreen-navigation {
     z-index: $OVERLAY;
     background-color: $white;
@@ -70,6 +62,9 @@ nav.fullscreen-navigation {
     position: fixed;
     transition: all 400ms ease-in-out;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 nav.fullscreen-navigation ul {
     list-style: none;
@@ -108,10 +103,6 @@ nav.fullscreen-navigation ul li a {
     color: $primary;
     font-size: 2rem;
     margin-right: 25px;
-}
-
-.menu-container {
-    margin-top: 250px;
 }
 
 // animation

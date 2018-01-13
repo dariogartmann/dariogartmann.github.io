@@ -1,18 +1,18 @@
 footer.default-footer {
     left: 0;
     bottom: 0;
-    background-color: $darkgray;
+    background-color: #F9F9F9;
     background-size: cover;
     background-position: center;
     width: 100%; 
-    color: $lightgray;
+    color: darken($lightgray, 20);
     z-index: -1;
     padding: 75px 0;
 
     transition: background-image 1s ease;
 
     a {
-        color: $lightgray;
+        color: darken($lightgray, 20);
         text-decoration: none;
     }
     p {
@@ -20,7 +20,7 @@ footer.default-footer {
     }
 
     a:hover{
-        color:lighten($lightgray, 20);
+        color: darken($lightgray, 40);
     }
 
     span.tag {

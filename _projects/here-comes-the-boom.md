@@ -2,16 +2,16 @@
 title: Here comes the boom!
 description: "Me and Feres Harrabi work together. He recently asked me if I could create a video of him training in the gym for him. Of course I was immediately on board and some days later we hit the gym!"
 released: 2017
-type: PromoVideo Video
+type: Promo Video
 youtube-id: 4JE608PVJc0
 tags: ['promo', 'fitness', 'gym']
-featured-image: "/assets/images/projects/feres/feres_banner.jpg"
+featured-image: "/assets/images/projects/feres/feres.jpg"
 layout: project
-scheme: dark
 ---
 
-<figure class="wide">
-    <img src="{{site.url}}/assets/images/projects/feres/feres_grid.jpg" alt="Screenshot" />
+<figure class="imagelist">
+    <img class="half" src="{{site.url}}/assets/images/projects/feres/feres1.jpg" data-action="zoom"  alt="Feres1" />
+    <img class="half" src="{{site.url}}/assets/images/projects/feres/feres2.jpg" data-action="zoom" alt="Feres2" />
 </figure>
 
 ## Videos

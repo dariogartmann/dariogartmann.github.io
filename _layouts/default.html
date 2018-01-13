@@ -10,11 +10,11 @@
         <meta name="theme-color" content="#222">
 
         <link rel="shortcut icon" type="image/png" href="{{site.url}}/favicon.png"/>
-        <link rel="stylesheet" href="{{ site.url }}/assets/css/main.css">
+        <link rel="stylesheet" href="{{ site.url }}/assets/css/main.css" />
 		<script src="https://use.fontawesome.com/f0ef56809a.js"></script>
     </head>
 
-    <body class="{% if page.featured-image %}has-featured-image{% endif %} {{ page.scheme }}">
+    <body class="{% if page.featured-image %}has-featured-image{% endif %}">
         {% include header.html %}
         <main class="default-content fade-in">
             {% if page.featured-image %}
