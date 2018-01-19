@@ -25,13 +25,13 @@
         }
 
         h1.hero_title {
-            font-size: 8rem;
+            font-size: 6rem;
             font-weight: 600;
             font-family: "Open Sans";
-            text-transform: uppercase;
-            letter-spacing: 15px;
+            font-variant: small-caps;
+            letter-spacing: 10px;
             color: $white;
-        }  
+        }
     }
 } 
 
@@ -52,7 +52,7 @@ body.home {
     .home-section {
         .hero {
             h1.hero_title {
-                font-size: 5rem;
+                font-size: 4rem;
                 letter-spacing: 5px;
             }
         }
