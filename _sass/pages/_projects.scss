@@ -15,7 +15,7 @@ span.tag {
 
 	a.project {
 		display: block;
-		padding-bottom: 25px;
+		padding-bottom: 50px;
 		text-decoration: none;
 		color: $black;
 		font-size: 2rem;
@@ -25,6 +25,10 @@ span.tag {
 		p {
 			margin: 0;
 			padding: 10px 25px 0 25px;
+
+			&.title {
+				margin-top: 15px;
+			}
 
 			&.type {
 				color: $accent;
@@ -116,6 +120,10 @@ figure.imagelist {
 @media (max-width: 650px) {
     .half.project-container {
 		margin: 0;
+	}
+
+	.half.project-container a.project {
+		margin-bottom: 50px;
 	}
 
 	.half.project-container a.project:last-of-type {
