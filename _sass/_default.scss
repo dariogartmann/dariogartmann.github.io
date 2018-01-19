@@ -52,12 +52,12 @@ hr {
 .fancylink:before {
     content: "";
     position: absolute;
-    background-color: rgba($primary, 0.5);
+    background-color: rgba($primary, 0.75);
     left: 0;
     bottom: 10%;
     right: 100%;
     top: 60%;
-    z-index: 1;
+    z-index: -1;
     transition: right 300ms ease-in-out; 
 }
 .fancylink:hover:before {

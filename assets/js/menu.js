@@ -16,7 +16,7 @@ $(document).ready(function(){
     function toggleMenu() {
         switch(isMenuOpen) {
             case true:
-                $('.modal').css('top', '-100%');
+                $('.modal').css('top', 'calc(-100% - 75px)');
                 setTimeout(function() {
                     $('.menu-item').removeClass('fade-in');
                     $('.social').toggleClass('fade-in');

@@ -57,7 +57,7 @@ nav.fullscreen-navigation {
     height: 100vh;
     width: 100%;
     width: 100vw;
-    top: -100%;
+    top: calc(-100% - 75px);
     left: 0;
     position: fixed;
     transition: top 400ms ease-in-out;
@@ -122,5 +122,15 @@ nav.fullscreen-navigation ul li a {
         font-size: 1.75rem;
         display: block;
         margin-right: 0;
+    }
+}
+
+@media (max-width: 325px) {
+    .menu-label {
+        display: none;
+    }
+
+    nav.fullscreen-navigation ul li a {
+        letter-spacing: 2px;
     }
 }
