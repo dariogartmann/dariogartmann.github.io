@@ -6,12 +6,13 @@
     width: 100vw;
     text-align: center;
 
-    background-image: url('/assets/images/dario-berlin.jpg');
+    background-image: url('/assets/images/dario.jpg');
     background-size: cover;
-    background-position: bottom;
+    background-position: right;
     background-repeat: no-repeat;
 
     .hero {
+        margin-left: 25px;
         z-index: 4;
 
         .hero_links {
@@ -47,9 +48,22 @@ body.home {
     top: 50%;
     left: 50%;
 }
+
+footer.home-footer {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+
+    p {
+        margin: 0;
+        line-height: 1rem;
+    }
+}
+
 // smaller than tablet
 @media (max-width: 750px) {
     .home-section {
+        background-image: url('/assets/images/dario-portrait.jpg');
         .hero {
             h1.hero_title {
                 font-size: 4rem;
