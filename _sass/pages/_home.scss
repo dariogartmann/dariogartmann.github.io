@@ -8,7 +8,7 @@
 
     background-image: url('/assets/images/dario.jpg');
     background-size: cover;
-    background-position: right;
+    background-position: center;
     background-repeat: no-repeat;
 
     .hero {
@@ -63,8 +63,15 @@ footer.home-footer {
 // smaller than tablet
 @media (max-width: 750px) {
     .home-section {
-        background-image: url('/assets/images/dario-portrait.jpg');
+        background-image: url('/assets/images/camera.jpg');
+
+        align-items: flex-end;
+
         .hero {
+            margin: 25px;
+            text-align: left;
+
+
             h1.hero_title {
                 font-size: 4rem;
                 letter-spacing: 5px;

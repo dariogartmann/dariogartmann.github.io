@@ -11,6 +11,23 @@
 
     display: inline-block;
 
+    &.primary {
+        background-color: $primary;
+        color: $white;
+
+        &:before {
+            right: 0;
+            height: 0;
+            width: 0;
+            position: relative;
+        }
+
+        &:hover {
+            background-color: darken($primary, 5);
+            border-color: darken($primary, 5);
+        }
+    }
+
     &:before {
         content: "";
         position: absolute;

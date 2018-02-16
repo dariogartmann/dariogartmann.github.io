@@ -53,4 +53,11 @@ $(document).ready(function(){
     }).on("resize", function(){ 
        winH = $(this).height(); 
     });
+
+
+    var isMobile = window.matchMedia("only screen and (max-width: 760px)");
+
+    if (isMobile.matches) {
+        $('.carousel-video').remove();
+    }
 });
