@@ -1,26 +1,28 @@
 footer.default-footer {
     left: 0;
     bottom: 0;
-    background-color: #F9F9F9;
+    background-color: $black;
     background-size: cover;
     background-position: center;
     width: 100%; 
-    color: darken($lightgray, 20);
+    color: $lightgray;
     z-index: -1;
     padding: 75px 0;
 
-    transition: background-image 1s ease;
-
     a {
-        color: darken($lightgray, 20);
+        color: $lightgray;
         text-decoration: none;
     }
     p {
         margin: 0;
+
+        &.copyright {
+            color: $lightgray;
+        }
     }
 
     a:hover{
-        color: darken($lightgray, 40);
+        color: lighten($accent, 40);
     }
 
     span.tag {
@@ -28,6 +30,6 @@ footer.default-footer {
     }
 
     ul.project-list li a {
-        color: $lightgray;
+        color: $accent;
     }
 }
