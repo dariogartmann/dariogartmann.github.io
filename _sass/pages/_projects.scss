@@ -51,13 +51,14 @@ span.tag {
 
 // Images
 figure.imagelist {
-	margin: 0 25px 125px 25px;
-	max-width: calc(100% - 50px);
+	margin: 0 0 125px 0;
+	max-width: 100%;
 	display: flex;
 	flex-flow: row wrap;
 	
 	img {
 		width: 100%;
+		height: auto;
 		align-self: center;
 	}
 	img.half {

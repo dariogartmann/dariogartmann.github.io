@@ -4,7 +4,8 @@ title: Projects
 ---
 <section class="full-width-section">
     <div class="full-width-container flex">
-        {% for project in site.projects %}
+        {% assign sortedProjects = (site.projects | sort: 'released') | reverse %}
+        {% for project in sortedProjects %}
         <article class="half project-container">
             <a class="project" href="{{ project.url }}">
                 <img src="{{site.url}}{{ project.featured-image }}" alt="{{project.title}}" />

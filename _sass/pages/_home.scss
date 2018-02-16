@@ -66,9 +66,11 @@ footer.home-footer {
         background-image: url('/assets/images/camera.jpg');
 
         align-items: flex-end;
+        max-height: 100%;
 
         .hero {
             margin: 25px;
+            margin-bottom: 125px;
             text-align: left;
 
 

@@ -1,6 +1,16 @@
 <header class="navbar">
     <div class="full-width-container">
         <h1 class="sitetitle"><a href="/">Dario Gartmann</a></h1>
+        <ul class="desktop-menu">
+            {% for link in site.data.navigation %}
+                {% if link.url contains 'http' %}
+                {% assign domain = '' %}
+                {% else %}
+                {% assign domain = site.url %}
+                <li><a class="fancylink" href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
         <a href="#" class="menu-icon" id="trigger-menu"><i class="fa fa-bars"></i><span class="menu-label"> Menu</span></a>
         <div class="u-cf"></div>
     </div>

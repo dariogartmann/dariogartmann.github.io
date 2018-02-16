@@ -1,7 +1,7 @@
 ---
 title: One of those days
 description: "The theme of this years ZFF 72 contest was 'blue'. The participant teams had 72 hours to plan, shoot and edit a short film that matches the given theme. Our video tells the story of a guy whose day just can't get any better."
-released: 2017
+released: 20170920
 type: Short Film
 youtube-id: FH6AU5l3WOE
 tags: ['Zurich Film Festival', 'ZFF 72', 'Contest']
@@ -10,7 +10,7 @@ layout: project
 ---
 
 <figure class="imagelist">
-    <img class="full" src="{{site.url}}/assets/images/projects/one-of-those-days/zff72_ootd_1.jpg" data-action="zoom"  alt="One of those days short film" />
+    <img class="full" src="{{site.url}}/assets/images/projects/one-of-those-days/zff72_ootd_1.jpg" alt="One of those days short film" />
 </figure>
 
 ## The Idea
@@ -18,5 +18,5 @@ The announcement of the theme 'blue' marked the start of the 72 hour time period
 
 
 <figure class="imagelist">
-    <img class="full" src="{{site.url}}/assets/images/projects/one-of-those-days/zff72_ootd_2.jpg" data-action="zoom"  alt="Did I mention a rough night?" />
+    <img class="full" src="{{site.url}}/assets/images/projects/one-of-those-days/zff72_ootd_2.jpg" alt="Did I mention a rough night?" />
 </figure>

@@ -8,6 +8,7 @@
     display: none;
     color: $black;
     z-index: $OVERLAY;
+    cursor: zoom-out;
 }
 .lumos-container .lumos-alt-text {
     position: fixed;
@@ -45,7 +46,7 @@
     max-height: 100%;
     max-width: 100%;
     z-index: 11;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+    // box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
     cursor: default
 }
 .lumos-container svg {
@@ -60,8 +61,7 @@
     height: 25px;
     width: 25px;
     cursor: pointer;
-    fill: $black;
-    background: rgba(0, 0, 0, .6);
+    fill: $white;
     padding: 5px;
     -moz-transition: all 150ms ease-in-out;
     -o-transition: all 150ms ease-in-out;
@@ -83,14 +83,13 @@
     .lumos-container svg {
         height: 30px;
         width: 30px;
-        background: 0 0
+        fill: $black;
     }
 }
 @media screen and (min-width: 992px) {
     .lumos-container svg {
         height: 40px;
         width: 40px;
-        background: 0 0
     }
 }
 .lumos-container .lumos-next {
@@ -112,9 +111,9 @@
     right: 25px;
     height: 25px;
     width: 25px;
-    background: rgba(0, 0, 0, .6);
     padding: 5px;
-    transform: translateY(-50%) translateX(50%)
+    transform: translateY(-50%) translateX(50%);
+    fill: $black;
 }
 @media screen and (min-width: 768px) {
     .lumos-container .lumos-close {

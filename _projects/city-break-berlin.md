@@ -1,7 +1,7 @@
 ---
 title: City-Break Berlin
 description: "In autumn 2017 me and two friends spent four days in Berlin. Of course I took my camera with me and documented most of it. This video is a short summary of our weekend in the capitol of Germany."
-released: 2017
+released: 20170911
 type: Travel Video
 youtube-id: 746bSKb7F-M
 tags: ['travel', 'germany', 'exploring']
