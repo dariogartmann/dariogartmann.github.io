@@ -45,7 +45,7 @@ $(document).ready(function(){
     var winH = $win.height();
 
     $win.on("scroll", function () {
-        if ($(this).scrollTop() >= 325) {
+        if ($(this).scrollTop() >= 62.5) {
             $banner.addClass("sticky");
         } else {
             $banner.removeClass("sticky");

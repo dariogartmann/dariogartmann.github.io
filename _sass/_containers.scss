@@ -1,13 +1,8 @@
-.da-container {
-    max-width: 960px;
-    margin: 0 auto;
-}
-
 .full-width-container {
-    padding: 0 25px;
+    padding: 0 75px;
 }
 
-.container {
+.da-container {
     text-align: left;
     max-width: 960px;
     margin: 0 auto;
@@ -32,12 +27,16 @@
 
 /* Smaller than phablet */
 @media (max-width: 550px) {
-    .full-width-container.flex, .container.flex, .da-container.flex {
+    .full-width-container.flex, .da-container.flex {
         display: block;
 
         .third { width: 100%; margin-bottom: 25px; }
         .half { width: 100%; margin-bottom: 25px; }
         .full { margin-bottom: 25px; }
+    }
+
+    .full-width-container {
+        padding: 0 25px;
     }
 }
 

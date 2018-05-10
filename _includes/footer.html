@@ -1,21 +1,28 @@
-<footer class="default-footer" id="image-target">
-    <div class="da-container flex">
-        <div class="third">
-            <span class="tag">Mail</span><br/>
-            <a href="mailto:hello@dariogartmann.ch">hello@dariogartmann.ch</a><br/>
+<footer class="default-footer">
+    {% if page.url != "/projects/" %}
+    <div class="full-width-container flex footer_contactinfo">
+        <div class="half">
+            <h2>View other projects.</h2>
         </div>
-        <div class="third">
-            <span class="tag">Instagram</span><br/>
-            <a href="https://instagram.com/dario.gartmann" target="_blank">@dario.gartmann</a><br/>
-            <a href="https://instagram.com/dario.visuals" target="_blank">@dario.visuals</a><br/>
-        </div>
-        <div class="third">
-            <span class="tag">Twitter</span><br/>
-            <a href="https://twitter.com/dario_gartmann" target="_blank">@dario_gartmann</a><br/>
-        </div>
-        <div class="full">
-            <br/><br/>
-            <p class="copyright">&copy; Dario Gartmann &ndash; 2018</p>
+    </div>
+    <div class="full-width-section flex">
+        {% assign sampledProjects = site.projects | sample:2 %}
+        {% for project in sampledProjects %}
+        <a class="half footer_project" style="background-image: url({{site.url}}{{ project.featured-image }})" href="{{ project.url }}">
+            <h3>{{ project.title }}</h3>
+        </a>
+        {% endfor %}
+    </div>
+    {% endif %}
+    <div class="full-width-container footer_copyright flex" style="justify-content: space-between">
+        <p>&copy; Dario Gartmann &ndash; 2018</p>
+        <div class="social-media">
+            <a class="fancylink" href="https://instagram.com/dario.gartmann" target="_blank">
+                <i class="fa fa-instagram"></i> dario.gartmann
+            </a>&nbsp;&nbsp;
+            <a class="fancylink" href="mailto:hello@dariogartmann.ch">
+                <i class="fa fa-envelope-o"></i> hello@dariogartmann.ch
+            </a>
         </div>
     </div>
 </footer>

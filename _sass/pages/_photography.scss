@@ -10,7 +10,7 @@ a.lumos-link {
 
 .grid {
     z-index: $MIDGROUND;
-    margin: 0 0 0 25px;
+    margin: 0;
 }
 
 .grid img {
@@ -31,7 +31,7 @@ a.lumos-link {
     width: calc(66.66% - 25px);
 }
 .item.ultrawide {
-    width: calc(100% - 25px);
+    width: calc(100% - 25x);
 }
 
 // smaller than tablet
