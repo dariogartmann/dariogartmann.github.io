@@ -1,5 +1,7 @@
 ---
 layout: default
+scripts:
+ - /assets/js/vendor/lity.min.js
 ---
 <section class="full-width-section">
     <div class="da-container">
@@ -14,7 +16,10 @@ layout: default
                 {{ page.description }}
             </p>
             {% if page.youtube-id %}
-                <a class="fancylink" href="https://youtu.be/{{ page.youtube-id }}" target="_blank">Watch <i class="fa fa-angle-right"></i></a>
+                <a class="fancylink projectlink" href="https://youtu.be/{{ page.youtube-id }}" data-lity>Watch Video <i class="fa fa-angle-right"></i></a>
+            {% endif %}
+            {% if page.website %}
+                <a class="fancylink projectlink" href="{{ page.website }}" target="_blank">Visit Website <i class="fa fa-angle-right"></i></a>
             {% endif %}
         </article>
     </div>

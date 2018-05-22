@@ -22,4 +22,6 @@ p {
 
 a {
     transition: color 300ms ease-in-out;    
+    text-decoration: none;
+    color: $primary;
 }
