@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Photography
-featured-image: "/assets/images/gallery/thumb/firespin.jpg"
+featured-image: "/assets/images/gallery/thumb/lugano.jpg"
 scripts:
  - /assets/js/vendor/masonry.min.js
  - /assets/js/vendor/lumos.min.js
@@ -19,9 +19,7 @@ scripts:
         <div class="grid-sizer"></div>
         {% for showCasePhoto in site.data.photos.showcase %}
         <div class="item {{ showCasePhoto.format }}">
-            <a href="/assets/images/gallery/full/{{ showCasePhoto.img }}.jpg" class="lumos-link" data-lumos="showcase">
-                <img src="/assets/images/gallery/thumb/{{ showCasePhoto.img }}.jpg" alt="{{ showCasePhoto.title }}"/>
-            </a> 
+            <img data-action="zoom" class="lazy" src="/assets/images/gallery/thumb/{{ showCasePhoto.img }}.jpg" data-src="{{ site.url }}/assets/images/gallery/full/{{ showCasePhoto.img }}.jpg" alt="{{ showCasePhoto.title }}">
         </div>
         {% endfor %}       
     </div>
@@ -35,9 +33,7 @@ scripts:
         <!-- possible item formats: default, wide, ultrawide -->
         {% for photo in gallery.images %}
         <div class="item {{ photo.format }}">
-            <a href="/assets/images/gallery/full/{{ photo.img }}.jpg" class="lumos-link" data-lumos="{{ gallery.id }}">
-                <img src="/assets/images/gallery/thumb/{{ photo.img }}.jpg" alt="{{ photo.title }}"/>
-            </a> 
+            <img data-action="zoom" class="lazy" src="/assets/images/gallery/thumb/{{ photo.img }}.jpg" data-src="{{ site.url }}/assets/images/gallery/full/{{ photo.img }}.jpg" alt="{{ photo.title }}">
         </div>
         {% endfor %}       
     </div>

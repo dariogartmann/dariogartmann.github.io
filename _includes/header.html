@@ -3,10 +3,15 @@
         <h1 class="sitetitle"><a href="/">Dario Gartmann</a></h1>
         <ul class="desktop-menu">
             {% for link in site.data.navigation %}
-                {% if link.url contains 'http' %}
-                {% assign domain = '' %}
+                {% if link.url contains 'http' or link.url contains 'mailto' %}
+                    {% assign domain = '' %}
                 {% else %}
-                {% assign domain = site.url %}
+                    {% assign domain = site.url %}
+                {% endif %}
+                
+                {% if link.spacer == true %}
+                <li><span class="spacer">|</span></li>
+                {% else %}
                 <li><a class="fancylink" href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a></li>
                 {% endif %}
             {% endfor %}
@@ -22,7 +27,9 @@
                     {% assign domain = '' %}
                     {% else %}
                     {% assign domain = site.url %}
-                    <li><a class="menu-item close-menu" href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a></li>
+                        {% unless link.spacer == true %}
+                        <li><a class="menu-item close-menu" href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a></li>
+                        {% endunless %}
                     {% endif %}
                 {% endfor %}
             </ul>

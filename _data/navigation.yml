@@ -6,3 +6,10 @@
 
 - title: About
   url: /about
+
+- title: "|"
+  url: "#"
+  spacer: true
+
+- title: <i class="fa fa-envelope-o"></i>
+  url: mailto:mail@dariogartmann.ch

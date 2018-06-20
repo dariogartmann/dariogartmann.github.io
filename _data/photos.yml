@@ -1,37 +1,40 @@
-showcase:
+ showcase:
   - title: Radio Tower in Milano
     img: milano
   - title: Morcote near Lugano, Switzerland
     img: lugano
-  - title: Silvan
-    img: silvan
   - title: Playing with fire
     img: firespin
     format: wide
   - title: Matterhorn
     img: matterhorn
+  - title: Silvan
+    img: silvan
+  - title: Seraina
+    img: seraina
 
-galleries:
-  - city:
-    id: city
-    name: Cities.
-    images:
-      - title: Milano
-        img: milano
-      - title: Lugano
-        img: lugano
-  - fire:
-    id: fire
-    name: Playing with fire
-    images:
-      - title: Playing with fire
-        img: firespin
-        gallery: default
-  - people:
-    id: people
-    name: People.
-    images:
-      - title: Seraina
-        img: seraina
-      - title: Silvan
-        img: silvan
+
+#galleries:
+#  - city:
+#    id: city
+#    name: Cities.
+#    images:
+#      - title: Milano
+#        img: milano
+#      - title: Lugano
+#        img: lugano
+#  - fire:
+#    id: fire
+#    name: Playing with fire
+#    images:
+#      - title: Playing with fire
+#        img: firespin
+#        gallery: default
+#  - people:
+#    id: people
+#    name: People.
+#    images:
+#      - title: Seraina
+#        img: seraina
+#      - title: Silvan
+#        img: silvan
