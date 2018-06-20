@@ -17,64 +17,29 @@ scripts:
 <section class="full-width-container photo-section">
     <div class="grid" id="grid">
         <div class="grid-sizer"></div>
-        <!-- item ultrawide is a thing -->
-        <div class="item">
-            <a href="/assets/images/gallery/full/firespin.jpg" class="lumos-link" data-lumos="gallery">
-                <img src="/assets/images/gallery/thumb/firespin.jpg" alt="Spinning steelwool"/>
+        {% for showCasePhoto in site.data.photos.showcase %}
+        <div class="item {{ showCasePhoto.format }}">
+            <a href="/assets/images/gallery/full/{{ showCasePhoto.img }}.jpg" class="lumos-link" data-lumos="showcase">
+                <img src="/assets/images/gallery/thumb/{{ showCasePhoto.img }}.jpg" alt="{{ showCasePhoto.title }}"/>
             </a> 
         </div>
-        <div class="item">
-            <a href="/assets/images/gallery/full/milano.jpg" class="lumos-link" data-lumos="gallery">
-                <img src="/assets/images/gallery/thumb/milano.jpg" alt="Streets of Milan"/>
-            </a> 
-        </div>
-        <div class="item">
-            <a href="/assets/images/gallery/full/lugano.jpg" class="lumos-link" data-lumos="gallery">
-                <img src="/assets/images/gallery/thumb/lugano.jpg" alt="Morcote &ndash; a beautiful village in Ticino"/>
-            </a>                     
-        </div>
-        <div class="item">
-            <a href="/assets/images/gallery/full/seraina.jpg" class="lumos-link" data-lumos="gallery">
-                <img src="/assets/images/gallery/thumb/seraina.jpg" alt="Portrait"/>
-            </a>                     
-        </div>
- 
-        <div class="item">
-            <a href="/assets/images/gallery/full/london_nightscape.jpg" class="lumos-link" data-lumos="gallery">
-                <img src="/assets/images/gallery/thumb/london_nightscape.jpg" alt="London at night"/>
-            </a>
-        </div>
-        <div class="item">
-            <a href="/assets/images/gallery/full/shard.jpg" class="lumos-link" data-lumos="gallery">
-                <img src="/assets/images/gallery/thumb/shard.jpg" alt="The Shard, one of Londons landmarks"/>
-            </a> 
-        </div>
-        <div class="item">
-            <a href="/assets/images/gallery/full/berlin.jpg" class="lumos-link" data-lumos="gallery">
-                <img src="/assets/images/gallery/thumb/berlin.jpg" alt="Berlin Cityscape"/>
-            </a>
-        </div>
-        <div class="item">
-            <a href="/assets/images/gallery/full/silvan.jpg" class="lumos-link" data-lumos="gallery">
-                <img src="/assets/images/gallery/thumb/silvan.jpg" alt="Silvan"/>
-            </a>                     
-        </div>
-        <div class="item">
-            <a href="/assets/images/gallery/full/teufelsberg.jpg" class="lumos-link" data-lumos="gallery">
-                <img src="/assets/images/gallery/thumb/teufelsberg.jpg" alt="Relaxing"/>
-            </a>                     
-        </div>
-
-        <div class="item">
-            <a href="/assets/images/gallery/full/gornergrat.jpg" class="lumos-link" data-lumos="gallery">
-                <img src="/assets/images/gallery/thumb/gornergrat.jpg" alt="On my way to view the Matterhorn"/>
-            </a>                     
-        </div>
-
-        <div class="item">
-            <a href="/assets/images/gallery/full/matterhorn.jpg" class="lumos-link" data-lumos="gallery">
-                <img src="/assets/images/gallery/thumb/matterhorn.jpg" alt="the Matterhorn"/>
-            </a>                     
-        </div>
+        {% endfor %}       
     </div>
+
+    {% for gallery in site.data.photos.galleries %}
+    <div style="margin-top: 75px">
+        <h3>{{ gallery.name }}</h3>
+    </div>
+    <div class="grid" id="grid">
+        <div class="grid-sizer"></div>
+        <!-- possible item formats: default, wide, ultrawide -->
+        {% for photo in gallery.images %}
+        <div class="item {{ photo.format }}">
+            <a href="/assets/images/gallery/full/{{ photo.img }}.jpg" class="lumos-link" data-lumos="{{ gallery.id }}">
+                <img src="/assets/images/gallery/thumb/{{ photo.img }}.jpg" alt="{{ photo.title }}"/>
+            </a> 
+        </div>
+        {% endfor %}       
+    </div>
+    {% endfor %}
 </section>
