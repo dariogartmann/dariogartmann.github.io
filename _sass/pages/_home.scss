@@ -29,8 +29,9 @@ section.hero {
 
     body.home {
         height: 100vh;
-        background-image: url('/assets/images/dario-paris.jpg');
+        background-image: url('/assets/images/video_placeholder.jpg');
         background-size: cover;
+        background-position: center;
         background-repeat: no-repeat;
     }
 }
