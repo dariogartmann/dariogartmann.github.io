@@ -2,7 +2,15 @@ section.hero {
     position: absolute;
     bottom: 75px;
     left: 75px;
-    max-width: 50%;
+
+    /*
+    h2, h1{
+        font-weight: 900;
+        background-color: $black;
+        padding: 8px;
+        margin-bottom: 8px;
+        display: block;
+    }*/
 
     h2, h3, p, a {
         margin-bottom: 0;
@@ -41,6 +49,7 @@ body.home {
     overflow: hidden;
 }
 
+// Video
 .carousel-video {
     min-height: 100%;
     min-width: 100%;
@@ -48,4 +57,42 @@ body.home {
     position: absolute;
     top: 50%;
     left: 50%;
+}
+
+// Slider
+.slider {
+    .slide {
+        display: block;
+        position: fixed;
+        top: 0;
+        left:0;
+        width: 100vw;
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+
+        .slide__text {
+            position: absolute;
+
+            left: 75px;
+            bottom: 75px;
+            color: $white;
+            
+            h2 {
+                font-weight: 700;
+            }
+        }
+    }
+
+    #slideIndicator {
+        width: 0%;
+        position: fixed;
+        height: 8px;
+        left: 0;
+        bottom: 0;
+        z-index: 5000;
+        display: block;
+        background-color: rgba($primary, 0.25);
+        transition: width 5000 ease-in;
+    }
 }
