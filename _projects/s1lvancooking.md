@@ -8,8 +8,8 @@ featured-image: "/assets/images/projects/s1lvancooking/pasta.jpg"
 layout: project
 youtube-id: pVRBam8wgzE
 ---
-<figure class="imagelist">
-    <img class="half" src="{{ site.url }}/assets/images/projects/s1lvancooking/vegetables.jpg" alt="Vegetables and Rice.. Curry?" data-action="zoom" />
-    <img class="half" src="{{ site.url }}/assets/images/projects/s1lvancooking/pasta.jpg" alt="Selfmade Pasta by Silvan Engler" data-action="zoom" />
+<div class="flickity_container">
+    <img class="" src="{{ site.url }}/assets/images/projects/s1lvancooking/vegetables.jpg" alt="Vegetables and Rice.. Curry?" />
+    <img class="" src="{{ site.url }}/assets/images/projects/s1lvancooking/pasta.jpg" alt="Selfmade Pasta by Silvan Engler" />
     <img src="{{ site.url }}/assets/images/projects/s1lvancooking/burger.jpg" alt="Selfmade Burger by Silvan Engler"/>
-</figure>
+</div>

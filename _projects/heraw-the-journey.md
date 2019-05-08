@@ -8,14 +8,8 @@ featured-image: "/assets/images/projects/heraw-the-journey/heraw.jpg"
 youtube-id: ZqWwC7RzY3c
 layout: project
 ---
-<figure class="imagelist">
-    <img src="{{ site.url }}/assets/images/projects/heraw-the-journey/banner.jpg" alt="The Journey, memorywall" />
-</figure>
-
-<figure class="imagelist">
-    <img src="{{ site.url }}/assets/images/projects/heraw-the-journey/thejourney.jpg" alt="Photo of heraw and friends." />
-</figure>
-
-<figure class="imagelist">
+<div class="flickity_container">
     <img src="{{ site.url }}/assets/images/projects/heraw-the-journey/9475.jpg" alt="9475" />
-</figure>
+    <img src="{{ site.url }}/assets/images/projects/heraw-the-journey/banner.jpg" alt="The Journey, memorywall" />
+    <img src="{{ site.url }}/assets/images/projects/heraw-the-journey/thejourney.jpg" alt="Photo of heraw and friends." />
+</div>

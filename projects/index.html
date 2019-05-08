@@ -3,15 +3,11 @@ layout: page
 title: Projects
 featured-image: "/assets/images/projects/index.jpg"
 ---
-<section class="full-width-section page-header">
-    <div class="full-width-container flex">
-        <div class="full">
-            <h2>Selected Projects.</h2>
-        </div>
-    </div>
-</section>
+
 <section class="full-width-section">
     <div class="full-width-container flex projectlist">
+            <div style="width: 100%; height: 128px"></div>
+
         {% assign sortedProjects = (site.projects | sort: 'released') | reverse %}
         {% for project in sortedProjects %}
         <article class="half project-container">

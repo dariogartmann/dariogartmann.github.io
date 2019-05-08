@@ -1,11 +1,14 @@
 .full-width-container {
-    padding: 0 75px;
+    padding: 0 96px;
+
+
+    &.has-padding {
+        padding: 128px 96px;
+    }
 }
 
-.da-container {
-    text-align: left;
-    max-width: 960px;
-    margin: 0 auto;
+.text_center {
+    text-align: center;
 }
 
 .flex {
@@ -27,16 +30,16 @@
 
 /* Smaller than phablet */
 @media (max-width: 550px) {
-    .full-width-container.flex, .da-container.flex {
+    .full-width-container.flex {
         display: block;
 
-        .third { width: 100%; margin-bottom: 25px; }
-        .half { width: 100%; margin-bottom: 25px; }
-        .full { margin-bottom: 25px; }
+        .third { width: 100%; margin-bottom: 32px; }
+        .half { width: 100%; margin-bottom: 32px; }
+        .full { margin-bottom: 32px; }
     }
 
     .full-width-container {
-        padding: 0 25px;
+        padding: 0 32px;
     }
 }
 
@@ -44,26 +47,73 @@
     width: 100%;
     margin: 0;
     position: relative;
-    background-color: $white;
+    background-color: $black;
 }
 
 .photo-section {
     position: relative;
-    background-color: $white;
+    background-color: $black;
+}
+
+.text-block {
+    p {
+        letter-spacing: 1px;
+        color: $accent;
+        margin-bottom: 0;
+        line-height: 3rem;
+        font-size: 2.25rem;
+        font-weight: 300;
+    }   
+
+    h3, h2 {
+        letter-spacing: 1px;
+        color: $accent;
+        line-height: 3rem;
+        font-size: 2.25rem;
+        font-weight: 800;
+    }
 }
 
 /* smaller than desktop*/
 @media (max-width: 1010px) {
-    .da-container {
-        width: calc(100% - 50px);
-        width: calc(100vw - 50px);
-    }
+   .text-block {
+
+   }
 }
 
 /* Smaller than phablet */
 @media (max-width: 550px) {
-    .da-container {
-        width: calc(100% - 50px);
-        width: calc(100vw - 50px);
+  .text-block {
+
+    .half {
+        width: 100%;
     }
+
+    p {
+        letter-spacing: 0;
+        color: $accent;
+        line-height: 2.25rem;
+        font-size: 1.75rem;
+        font-weight: 300;
+        margin-bottom: 0;
+    }   
+
+    h3, h2 {
+        letter-spacing: 0;
+        color: $accent;
+        line-height: 2.25rem;
+        font-size: 1.75rem;
+        font-weight: 800;
+    }
+  }
+
+
+  .full-width-container {
+    padding: 0 32px;
+
+
+    &.has-padding {
+        padding: 96px 32px;
+    }
+}
 }

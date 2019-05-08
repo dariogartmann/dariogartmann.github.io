@@ -1,15 +1,8 @@
 - title: Projects
   url: /projects/
 
-- title: Photography
-  url: /photography
+- title: Travel Journal
+  url: /traveljournals/
 
-- title: About
+- title: About Me
   url: /about
-
-- title: "|"
-  url: "#"
-  spacer: true
-
-- title: <i class="fa fa-envelope-o"></i>
-  url: mailto:mail@dariogartmann.ch

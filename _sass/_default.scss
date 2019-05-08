@@ -6,6 +6,7 @@
 @import "libs/lumos";
 @import "libs/zoom";
 @import "libs/lity";
+@import "libs/flickity";
 
 @import "components/button";
 @import "containers";
@@ -15,14 +16,14 @@
 @import "pages/page-default";
 @import "pages/about";
 @import "pages/home";
-@import "pages/photography";
 @import "pages/projects";
 
 /* Basic styling
 --------------------------------- */
 body {
     margin: 0;
-    background-color: $white; 
+    background-color: $black; 
+    color: $white;
 }
 
 img {
@@ -30,25 +31,25 @@ img {
     display: block;
 }
 
-hr {
-    height: 1px;
-    background-color: $accent;
-    border: none;
-    text-shadow: none;
-    box-shadow: none;
-}
-
 /* Fancy link
 --------------------------------- */
 .fancylink {
     text-decoration: none;
-    color: $black;
+    color: $white;
     position: relative;
     background: none;    
     z-index: 2;
+
+    &.fancylink--light {
+        color: $accent;
+    }
 }
 .fancylink:hover {
-    color: $black;
+    color: $lightgray;
+
+    &.fancylink--light {
+        color: $white;
+    }
 }
 
 .fancylink:before {
@@ -69,13 +70,32 @@ hr {
 .image-header {
     background-position: center;
     background-size: cover;
-    min-height: 402px;
+    min-height: 502px;
+    min-height: 100vh;
+    position: relative;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+
+    h2 {
+        color: $white;
+    }
 }
 
-article.text {
-    max-width: 640px;
-    padding: 125px 0;
-    margin: 0 auto;
+@media (max-width: 650px) {
+    .image-header {
+        min-height: 320px;
+    }
+
+}
+
+.rounded {
+    border-radius: 2px 2px 0 0;
+}
+
+.text-center {
+    text-align: center;
 }
 
 /* Utils

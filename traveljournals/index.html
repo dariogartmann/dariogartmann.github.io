@@ -1,0 +1,20 @@
+---
+layout: page
+title: Travel Journals
+featured-image: "/assets/images/journals/index.jpg"
+---
+<section class="full-width-section">
+    <div class="full-width-container flex projectlist">
+        <div style="width: 100%; height: 128px"></div>
+        {% assign sortedJournals = (site.traveljournals | sort: 'released') | reverse %}
+        {% for journey in sortedJournals %}
+        <article class="half project-container">
+            <a class="project" href="{{ journey.url }}">
+                <img class="rounded" src="{{site.url}}{{ journey.featured-image }}" alt="{{journey.title}}" />
+                <p class="title">{{ journey.title }}</p>
+                <p class="type">{{ journey.type }}</p>
+            </a>
+        </article>
+        {% endfor %}
+    </div>
+</section>

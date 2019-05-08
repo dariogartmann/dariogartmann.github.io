@@ -1,4 +1,22 @@
 ---
 layout: default
+scripts:
+ - /assets/js/vendor/lity.min.js
+ - /assets/js/vendor/flickity.min.js
 ---
-{{ content }}
+<div class="async-container">
+    {% if page.featured-image %}
+        <section class="image-header" style="background-image: url({{ page.featured-image }})">
+            <div class="container text-center">
+                <h2>{{ page.title }}</h2>
+            </div>
+            <span class="scroll">
+                scroll down<br/>
+                <i class="fa fa-angle-down"></i>
+            </span>
+        </section>
+    {% else %}
+        <aside class="spacer" style="display:block;height:125px;"></aside>
+    {% endif %}
+    {{ content }}
+</div>

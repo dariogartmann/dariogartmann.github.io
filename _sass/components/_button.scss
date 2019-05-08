@@ -2,12 +2,13 @@
     border: 2px solid $primary;
     background-color: transparent;
     color: $primary;
-    border-radius: 1px;
-    padding: 5px 25px;
+    border-radius: 2px;
+    padding: 8px 32px;
     position: relative;
     text-decoration: none;
     transition: all 90ms ease-in;
-    font-weight: 700;
+    font-weight: 600;
+    letter-spacing: 1px;
 
     display: inline-block;
 
