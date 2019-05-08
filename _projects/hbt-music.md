@@ -1,6 +1,6 @@
 ---
 title: Hustle Beats Talent
-description: "I got to take some photographs for the HBT Music Studio. It already looks amazing, but there is more to come! Except some new images in the future 😉"
+description: "I got to take some photographs for the HBT Music Studio. It already looks amazing, but there is more to come! Expect some new images in the future 😉"
 released: 20190501
 type: Various
 tags: ['Label', 'Rap', 'hiphop', 'photography']
