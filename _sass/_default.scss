@@ -14,7 +14,6 @@
 @import "footer";
 
 @import "pages/page-default";
-@import "pages/about";
 @import "pages/home";
 @import "pages/projects";
 
@@ -70,8 +69,8 @@ img {
 .image-header {
     background-position: center;
     background-size: cover;
-    min-height: 502px;
-    min-height: 100vh;
+    min-height: 512px;
+    // min-height: 100vh;
     position: relative;
 
     display: flex;
@@ -81,6 +80,8 @@ img {
     h2 {
         color: $white;
     }
+    // border-bottom: 8px solid $accent;
+
 }
 
 @media (max-width: 650px) {

@@ -2,7 +2,7 @@
 title: New York City
 description: "I really wanted to get away during the Christmas break in 2018. After some consideration, I booked tickets to New York City and packed my bag! Here are some impressions of my solo trip."
 released: 20190101
-type: Travel Video
+type: Travel Photography
 tags: ['solotravel', 'USA', 'New york']
 featured-image: "/assets/images/journals/new-york/banner.jpg"
 layout: project

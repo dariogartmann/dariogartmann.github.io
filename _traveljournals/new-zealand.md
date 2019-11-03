@@ -33,6 +33,18 @@ layout: project
     <img src="{{site.url}}/assets/images/journals/new-zealand/town.jpg" alt="Queenstown Panorama" />
 </figure>
 
+
+<div class="full-width-container has-padding">
+    <article class="text-block flex">
+        <div class="half">
+            <h3>Around the South-Island</h3>
+        </div>
+        <div class="half">
+            <p>Starting in Picton, we made our way to Abel-Tasman National Park, and from there on headed South.</p>
+        </div>
+    </article>
+</div>
+
 <div class="youtube">
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45120.351505880244!2d168.65683545771907!3d-45.024479499006105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa9d51df1d7a8de5f%3A0x500ef868479a600!2sQueenstown%2C+New+Zealand!5e0!3m2!1sen!2sch!4v1544363083869" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
@@ -40,10 +52,10 @@ layout: project
 <div class="full-width-container has-padding">
     <article class="text-block flex">
         <div class="half">
-            <h3>Flying halfway around the world</h3>
+            <h3>The Video</h3>
         </div>
         <div class="half">
-            <p>about the flights. 40 hours etc.</p>
+            <p>I was having such a great time with the group, I didn't press the record button as much as I had actually planned. Nonetheless, I still managed to put together a short clip with some impressions.</p>
         </div>
     </article>
 </div>

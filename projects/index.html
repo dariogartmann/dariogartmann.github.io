@@ -12,7 +12,7 @@ featured-image: "/assets/images/projects/index.jpg"
         {% for project in sortedProjects %}
         <article class="half project-container">
             <a class="project" href="{{ project.url }}">
-                <img src="{{site.url}}{{ project.featured-image }}" alt="{{project.title}}" />
+                <img class="rounded" src="{{site.url}}{{ project.featured-image }}" alt="{{project.title}}" />
                 <p class="title">{{ project.title }}</p>
                 <p class="type">{{ project.type }}</p>
             </a>

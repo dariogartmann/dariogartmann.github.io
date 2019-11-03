@@ -68,12 +68,16 @@ scripts:
                     });
 
                     // Initialize Flickity
-                    var elem = document.querySelector('.flickity_container');
-                    var flkty = new Flickity( elem, {
-                        // options
-                        imagesLoaded: true,
-                        percentPosition: false 
+                    var elements = document.querySelectorAll('.flickity_container');
+
+                    [].forEach.call(elements, function(elem) {
+                        var flkty = new Flickity( elem, {
+                            // options
+                            imagesLoaded: true,
+                            percentPosition: false 
+                        });
                     });
+
                 }
                 });
 
