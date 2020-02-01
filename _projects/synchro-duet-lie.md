@@ -12,7 +12,7 @@ layout: project
 ---
 
 <div class="flickity_container">
-    <img src="{{ site.url }}/assets/images/projects/synchro-duet-lie/review.png" alt="Synchronised swimmers reviewing their performance with trainer." />
+    <img src="{{ site.url }}/assets/images/projects/synchro-duet-lie/review.jpg" alt="Synchronised swimmers reviewing their performance with trainer." />
     <img src="{{ site.url }}/assets/images/projects/synchro-duet-lie/roadtotokyo.png" alt="Road to Tokyo Banner" />
 </div>
 
