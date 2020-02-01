@@ -88,8 +88,13 @@ scripts:
                 Barba.Pjax.start();
             }
         </script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-71586322-1"></script>
         <script>
-            // todo google analytics
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-71586322-1');
         </script>
     </body>
 </html>
