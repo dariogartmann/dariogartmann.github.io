@@ -23,8 +23,15 @@
         {% for js in page.scripts %}
             <script type="text/javascript" src="{{ js }}"></script>
         {% endfor %}
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-71586322-1"></script>
         <script>
-            // todo google analytics
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-71586322-1');
         </script>
+
     </body>
 </html>
