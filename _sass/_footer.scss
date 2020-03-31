@@ -11,8 +11,8 @@ footer.default-footer {
     .footer_copyright {
         padding-bottom: 25px;
         padding-top: 25px;
-        background-color: $black;
-        color: $lightgray;
+        background-color: $white;
+        color: $accent;
 
         a {
             margin-left: 15px;
@@ -51,7 +51,7 @@ footer.default-footer {
     }
 
     a {
-        color: $lightgray;
+        color: $accent;
         text-decoration: none;
     }
     p {
@@ -59,7 +59,7 @@ footer.default-footer {
     }
 
     a:hover{
-        color: lighten($accent, 40);
+        color: darken($accent, 40);
     }
 }
 

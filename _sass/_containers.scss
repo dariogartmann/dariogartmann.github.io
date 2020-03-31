@@ -47,18 +47,18 @@
     width: 100%;
     margin: 0;
     position: relative;
-    background-color: $black;
+    background-color: $white;
 }
 
 .photo-section {
     position: relative;
-    background-color: $black;
+    background-color: $white;
 }
 
 .text-block {
     p {
         letter-spacing: 1px;
-        color: $accent;
+        color: $black;
         margin-bottom: 0;
         line-height: 3rem;
         font-size: 2.25rem;
@@ -67,7 +67,7 @@
 
     h3, h2 {
         letter-spacing: 1px;
-        color: $accent;
+        color: $black;
         line-height: 3rem;
         font-size: 2.25rem;
         font-weight: 800;
@@ -91,7 +91,6 @@
 
     p {
         letter-spacing: 0;
-        color: $accent;
         line-height: 2.25rem;
         font-size: 1.75rem;
         font-weight: 300;
@@ -100,7 +99,6 @@
 
     h3, h2 {
         letter-spacing: 0;
-        color: $accent;
         line-height: 2.25rem;
         font-size: 1.75rem;
         font-weight: 800;

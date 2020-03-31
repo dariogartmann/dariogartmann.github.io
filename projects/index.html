@@ -6,15 +6,17 @@ featured-image: "/assets/images/projects/index.jpg"
 
 <section class="full-width-section">
     <div class="full-width-container flex projectlist">
-            <div style="width: 100%; height: 128px"></div>
+        <div style="width: 100%; height: 96px"></div>
 
         {% assign sortedProjects = (site.projects | sort: 'released') | reverse %}
         {% for project in sortedProjects %}
         <article class="half project-container">
             <a class="project" href="{{ project.url }}">
-                <img class="rounded" src="{{site.url}}{{ project.featured-image }}" alt="{{project.title}}" />
-                <p class="title">{{ project.title }}</p>
-                <p class="type">{{ project.type }}</p>
+                <img src="{{site.url}}{{ project.featured-image }}" alt="{{project.title}}" />
+                <div class="project__info">
+                    <h3 class="project__title">{{ project.title }}</h3>
+                    <p class="type">{{ project.type }}</p>
+                </div>
             </a>
         </article>
         {% endfor %}
