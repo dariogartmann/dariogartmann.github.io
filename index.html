@@ -20,23 +20,40 @@ layout: home
                 </div>
                 <div class="half">
                     <p>
-                        I am 21 years old and currently working as a video content creator for <a href="https://digicube.ch" target="_blank">digicube</a>. During my training I grew particularly interested in webdesign. I like being able to combine webdesign with taking photographs and recording films &ndash; two of my hobbies. 
-                        <br/><br/>
-                        In my spare time I love to travel and explore exciting new places – always carrying my camera.<br/>
-                        Feel free to explore my portfolio.
+                        I am 21 years old and currently working full-time as a video creator. What started as a hobby, has now become my day-to-day activity. 
+                        <br/>
+                        In my spare time I love to travel and explore exciting new places – always carrying my camera. Head over to my Instagram for a more personal glimpse into my life. <br/><br/>
+                        Feel free to explore my portfolio or check out my two latest projects below.
                     </p>
-                    <a href="mailto:hello@dariogartmann.ch" class="button projectlink">Get In Touch <i class="fa fa-send"></i></a>
+                    <!-- <a href="mailto:hello@dariogartmann.ch" class="button projectlink">Get In Touch <i class="fa fa-send"></i></a> -->
                 </div>
             </article>
         </div>
     </section>
     <section class="full-width-section">
-        <div class="full-width-container">
-            <img src="/assets/images/dario-berlin.jpg" />
+        <div class="full-width-container flex projectlist">
+            {% assign sortedProjects = (site.projects | sort: 'released') | reverse %}
+            {% for project in sortedProjects limit:2 %}
+            <article class="half project-container">
+                <a class="project" href="{{ project.url }}">
+                    <img src="{{site.url}}{{ project.featured-image }}" alt="{{project.title}}" />
+                    <div class="project__info">
+                        <h3 class="project__title">{{ project.title }}</h3>
+                        <p class="type">{{ project.type }}</p>
+                    </div>
+                </a>
+            </article>
+            {% endfor %}
         </div>
-        <div style="height: 128px;"></div>
+        <aside class="spacer" style="display:block;height:55px;"></aside>
+
     </section>
-  
+
+<!-- 
+     <section class="full-width-section" style="background-color: #D98F60; color: #FFF;">
+        <div class="full-width-container has-padding">
+            Get In Touch
+        </div>
+    </section>
+    -->
 </div>
-
-
