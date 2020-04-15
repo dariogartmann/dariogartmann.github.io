@@ -46,11 +46,9 @@
 
 // Video
 .carousel-video {
-    min-height: 100%;
     min-width: 100%;
     transform: translateX(-50%) translateY(-50%);
-    position: absolute;
-    top: 50%;
+    position: relative;
     left: 50%;
     z-index: -1;
 }
