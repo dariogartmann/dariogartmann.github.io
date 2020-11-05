@@ -6,7 +6,7 @@ type: Travel Video
 youtube-id: 746bSKb7F-M
 tags: ['travel', 'germany', 'exploring']
 featured-image: "/assets/images/journals/berlin/berlin.jpg"
-layout: project
+layout: travelproject
 ---
 <figure class="imagelist">
     <img data-action="zoom" src="{{ site.url }}/assets/images/journals/berlin/berlin_subway.jpg" alt="Berlin Subway" />

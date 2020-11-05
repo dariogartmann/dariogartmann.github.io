@@ -1,0 +1,50 @@
+---
+layout: default
+scripts:
+ - /assets/js/vendor/lity.min.js
+ - /assets/js/vendor/flickity.min.js
+---
+<div class="async-container">
+    {% if page.featured-image %}
+        <section class="image-header" style="background-image: url({{ page.featured-image }})">
+            <div class="container">
+                <h2 class="project__title">{{ page.title }}</h2>
+            </div>
+        </section>
+    {% else %}
+        <aside class="spacer" style="display:block;height:125px;"></aside>
+    {% endif %}
+    <section class="full-width-section back-navigation">
+        <div class="full-width-container">
+            <a href="{{ site.baseurl }}/traveljournals/" class="fancylink"><i class="fa fa-chevron-left"></i>  Back To Overview</a>
+        </div>
+    </section>
+    <section class="full-width-section">        
+        <div class="full-width-container has-padding">
+            <article class="text-block flex">
+                <div class="half">
+                    <h3 style="margin: 0;">{{ page.title }}</h3>
+                    {% if page.tags %}
+                        {% for tag in page.tags %}
+                            <span class="tag">{{ tag }}</span>
+                        {% endfor %}
+                    {% endif %}
+                </div>
+                <div class="half">
+                    <p>
+                        {{ page.description }}
+                    </p>
+                    {% if page.youtube-id %}
+                        <a class="button projectlink" href="https://youtu.be/{{ page.youtube-id }}" data-lity>Watch Video <i class="fa fa-angle-right"></i></a>
+                    {% endif %}
+                    {% if page.website %}
+                        <a class="button projectlink" href="{{ page.website }}" target="_blank">Visit Website <i class="fa fa-angle-right"></i></a>
+                    {% endif %}
+                </div>
+            </article>
+        </div>
+    </section>
+    <section class="full-width-section film-content">
+        {{ content }}
+    </section>
+</div>

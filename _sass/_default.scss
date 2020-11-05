@@ -9,6 +9,7 @@
 @import "libs/flickity";
 
 @import "components/button";
+@import "components/back-nav";
 @import "containers";
 @import "navigation";
 @import "footer";
@@ -70,7 +71,6 @@ img {
     background-position: center;
     background-size: cover;
     min-height: 512px;
-    // min-height: 100vh;
     position: relative;
 
     display: flex;
@@ -80,8 +80,6 @@ img {
     h2 {
         color: $white;
     }
-    // border-bottom: 8px solid $accent;
-
 }
 
 @media (max-width: 650px) {

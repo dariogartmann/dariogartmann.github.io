@@ -5,7 +5,7 @@ released: 20190101
 type: Travel Photography
 tags: ['solotravel', 'USA', 'New york']
 featured-image: "/assets/images/journals/new-york/banner.jpg"
-layout: project
+layout: travelproject
 ---
 <div class="flickity_container">
     <img src="{{ site.url }}/assets/images/journals/new-york/DSC04599.jpg" alt="9475" />

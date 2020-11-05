@@ -1,17 +1,24 @@
 ---
 layout: page
-title: Something went wrong!
+title: 404 Page Not Found.
 permalink: /404.html
 featured-image: "/assets/images/fail.gif"
 ---
-<section class="full-width-section">
-    <div class="da-container">
-        <article class="text">
-            <h2>404 &ndash; Page Not Found</h2>
-            <p>
-                The page you were looking for does not exist. Click the button below to navigate to the homepage.
-            </p>
-            <a href="/" class="button">Try Again <i class="fa fa-refresh"></i></a>
-        </article>
-    </div>
-</section>
+<div class="async-container">
+    <section class="full-width-section">        
+        <div class="full-width-container has-padding">
+            <article class="text-block flex">
+                <div class="half">
+                    <h3 style="margin: 0;">{{ page.title }}</h3>
+                </div>
+                <div class="half">
+                    <p>
+                        The page you were looking for does not exist.
+                        Click the button below to navigate to the homepage.
+                    </p><br/>
+                    <a href="/" class="button">Try Again <i class="fa fa-refresh"></i></a>
+                </div>
+            </article>
+        </div>
+    </section>
+</div>

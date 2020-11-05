@@ -1,0 +1,8 @@
+section.back-navigation {
+    background-color: lighten($accent, 25);
+    padding: 8px 0;
+    
+    a {
+        color: $accent;
+    }
+}

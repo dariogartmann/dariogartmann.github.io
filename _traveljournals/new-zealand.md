@@ -6,7 +6,7 @@ type: Roadtrip
 youtube-id: nzTBBg6jJOA
 tags: ['New Zealand', 'Journey', 'GAdventures']
 featured-image: "/assets/images/journals/new-zealand/river.jpg"
-layout: project
+layout: travelproject
 ---
 
 <div class="flickity_container">

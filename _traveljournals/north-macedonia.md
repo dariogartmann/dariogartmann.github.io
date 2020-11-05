@@ -5,7 +5,7 @@ released: 20190928
 type: Travel Photography
 tags: ['Skopje', 'Ohrid', 'North Macedonia']
 featured-image: "/assets/images/journals/nmk/skopje_oldtown.jpg"
-layout: project
+layout: travelproject
 ---
 <div class="flickity_container">
     <img src="{{ site.url }}/assets/images/journals/nmk/skopje_stadium.jpg" alt="Football stadium of Skopje near the river Vardar." />

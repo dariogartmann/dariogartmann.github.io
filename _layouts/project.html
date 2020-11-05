@@ -14,7 +14,12 @@ scripts:
     {% else %}
         <aside class="spacer" style="display:block;height:125px;"></aside>
     {% endif %}
-    <section class="full-width-section">
+    <section class="full-width-section back-navigation">
+        <div class="full-width-container">
+            <a href="{{ site.baseurl }}/projects/" class="fancylink"><i class="fa fa-chevron-left"></i>  Back To Overview</a>
+        </div>
+    </section>
+    <section class="full-width-section">        
         <div class="full-width-container has-padding">
             <article class="text-block flex">
                 <div class="half">
@@ -43,4 +48,3 @@ scripts:
         {{ content }}
     </section>
 </div>
-
