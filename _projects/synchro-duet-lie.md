@@ -45,10 +45,8 @@ layout: project
 </div>
 
 <div class="flickity_container">
-    <img src="{{ site.url }}/assets/images/projects/synchro-duet-lie/underwater-pics/Web_A7_03086.jpg" alt="Synchronised swimmers posing underwater" />
-    <img src="{{ site.url }}/assets/images/projects/synchro-duet-lie/underwater-pics/Web_A7_03370.jpg" alt="swimming towards light" />
-    <img src="{{ site.url }}/assets/images/projects/synchro-duet-lie/lights.jpg" alt="swimming underwater with light strings" />
-    <img src="{{ site.url }}/assets/images/projects/synchro-duet-lie/underwater-pics/Web_A7_02976.jpg" alt="Standing in the indoor pool wearing lights" />
-    <img src="{{ site.url }}/assets/images/projects/synchro-duet-lie/underwater-pics/Web_A7_02998.jpg" alt="synchronised swimmers posing underwater with lights" />
-    <img src="{{ site.url }}/assets/images/projects/synchro-duet-lie/underwater-pics/Web_A7_03487.jpg" alt="crane, well I guess it's called that." />
+    <img src="{{ site.url }}/assets/images/projects/synchro-duet-lie/underwater-pics/underwater-synchro.jpg" alt="Synchronised swimmers posing underwater" />
+    <img src="{{ site.url }}/assets/images/projects/synchro-duet-lie/underwater-pics/underwater-synchro-2.jpg" alt="Synchronised swimmers posing underwater" />
+    <img src="{{ site.url }}/assets/images/projects/synchro-duet-lie/underwater-pics/underwater-synchro-3.jpg" alt="Synchronised swimmer duet posing underwater" />
+    <img src="{{ site.url }}/assets/images/projects/synchro-duet-lie/underwater-pics/drowning.jpg" alt="Synchronised swimmer duet posing underwater" />
 </div>
