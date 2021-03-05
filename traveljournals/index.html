@@ -15,7 +15,9 @@ featured-image: "/assets/images/journals/index.jpg"
         {% for journey in sortedJournals %}
         <article class="half project-container">
             <a class="project" href="{{ journey.url }}">
-                <img src="{{site.url}}{{ journey.featured-image }}" alt="{{journey.title}}" />
+                <div class="project__img">
+                    <img src="{{site.url}}{{ journey.featured-image }}" alt="{{journey.title}}" />
+                </div>
                 <div class="project__info">
                     <h3 class="project__title">{{ journey.title }}</h3>
                     <p class="type">{{ journey.type }}</p>

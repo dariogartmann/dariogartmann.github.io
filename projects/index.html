@@ -16,7 +16,9 @@ description: "The best videos and projects I have made, all in one spot. Promo V
         {% for project in sortedProjects %}
         <article class="half project-container">
             <a class="project" href="{{ project.url }}">
-                <img src="{{site.url}}{{ project.featured-image }}" alt="{{project.title}}" />
+                <div class="project__img">
+                    <img src="{{site.url}}{{ project.featured-image }}" alt="{{project.title}}" />
+                </div>
                 <div class="project__info">
                     <h3 class="project__title">{{ project.title }}</h3>
                     <p class="type">{{ project.type }}</p>
