@@ -3,7 +3,7 @@ title: Blumen Schierscher
 description: "Promotional video for a local cut flower production and flower store. They grow all of their flowers by themselves in Schaan, Liechtenstein.<br/><br/>The video follows the life of a tulip. From seed to the finished bouquet."
 released: 20210301
 type: Promotional Video
-youtube-id: https://youtu.be/Pq3260xgwQk
+youtube-id: Pq3260xgwQk
 tags: ['Tulips', 'Flower Production', 'Promo']
 featured-image: "/assets/images/projects/blumen-schierscher/tulips.jpg"
 layout: project
