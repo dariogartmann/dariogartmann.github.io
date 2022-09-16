@@ -1,8 +1,8 @@
 ---
 title: Blumen Schierscher
-description: "Promotional video for a local cut flower production and flower store. They grow all of their flowers by themselves in Schaan, Liechtenstein.<br/><br/>The video follows the life of a tulip. From seed to the finished bouquet."
+description: "Various videos for a local cut flower production and flower store. They grow all of their flowers by themselves in Schaan, Liechtenstein.<br/><br/>Over the last few months I got to create various videos for them."
 released: 20210301
-type: Promotional Video
+type: Video Production
 youtube-id: Pq3260xgwQk
 tags: ['Tulips', 'Flower Production', 'Promo']
 featured-image: "/assets/images/projects/blumen-schierscher/tulips.jpg"
@@ -18,7 +18,7 @@ layout: project
 <div class="full-width-container has-padding">
     <article class="text-block flex">
         <div class="half">
-            <h3>Information</h3>
+            <h3>Life of a tulip</h3>
         </div>
         <div class="half">
             <p>This project started in late December 2020 and the last clip was recorded in late February of 2021. During this time the tulips have fully grown.<br/>
@@ -29,4 +29,16 @@ layout: project
 <div class="flickity_container">
     <img src="{{ site.url }}/assets/images/projects/blumen-schierscher/flowers_digin.jpg" alt="Tulip bulbs being covered with soil. " />
     <img src="{{ site.url }}/assets/images/projects/blumen-schierscher/flowers_comeout.jpg" alt="Emerging from the soil to show small grown tulips." />
+</div>
+
+<div class="full-width-container has-padding">
+    <article class="text-block flex">
+        <div class="half">
+            <h3>30 Years Anniversary</h3>
+        </div>
+        <div class="half">
+            <p>In 2022 Blumen Schierscher celebrated their 30 years anniversary. For this occasion we produced a video where the team talks about their experience and most cherished memories. Watch it here.</p><br/><br/><br/>
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/729097602?title=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+        </div>
+    </article>
 </div>
