@@ -6,16 +6,35 @@ scripts:
 ---
 <div class="async-container">
     {% if page.featured-image %}
-        <section class="image-header" style="background-image: url({{ page.featured-image }})">
-            <div class="container">
-                <h2 class="project__title">{{ page.title }}</h2>
+        <section class="image_header">
+            <div class="image_header--image" style="background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1)), url({{ page.featured-image }})"></div>
+
+            <div class="container text-center">
+                <h2 class="underlined">{{ page.title }}</h2><br/>
+                {% if page.tags %}
+                {% for tag in page.tags %}
+                    <span class="tag">{{ tag }}</span>
+                {% endfor %}
+            {% endif %}
+                <br/>
+                {% if page.youtube-id %}
+                <a class="button projectlink" href="https://youtu.be/{{ page.youtube-id }}" data-lity>Watch Video <i class="fa fa-angle-right"></i></a>
+                {% endif %}
+                {% if page.website %}
+                    <a class="button projectlink" href="{{ page.website }}" target="_blank">Visit Website <i class="fa fa-angle-right"></i></a>
+                {% endif %}
             </div>
         </section>
     {% else %}
-        <aside class="spacer" style="display:block;height:125px;"></aside>
+        <section class="title_header">
+            <div class="container text-center">
+                <h2 class="underlined">{{ page.title }}</h2>
+            </div>
+        </section>    
     {% endif %}
     <section class="full-width-section back-navigation">
         <div class="full-width-container">
+            <br/>
             <a href="{{ site.baseurl }}/projects/" class="fancylink"><i class="fa fa-chevron-left"></i>  Back To Overview</a>
         </div>
     </section>
@@ -23,23 +42,13 @@ scripts:
         <div class="full-width-container has-padding">
             <article class="text-block flex">
                 <div class="half">
-                    <h3 style="margin: 0;">{{ page.title }}</h3>
-                    {% if page.tags %}
-                        {% for tag in page.tags %}
-                            <span class="tag">{{ tag }}</span>
-                        {% endfor %}
-                    {% endif %}
+                    <h3 style="margin: 0;">Project Information</h3>
                 </div>
                 <div class="half">
                     <p>
                         {{ page.description }}
                     </p>
-                    {% if page.youtube-id %}
-                        <a class="button projectlink" href="https://youtu.be/{{ page.youtube-id }}" data-lity>Watch Video <i class="fa fa-angle-right"></i></a>
-                    {% endif %}
-                    {% if page.website %}
-                        <a class="button projectlink" href="{{ page.website }}" target="_blank">Visit Website <i class="fa fa-angle-right"></i></a>
-                    {% endif %}
+                   
                 </div>
             </article>
         </div>

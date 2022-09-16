@@ -1,7 +1,7 @@
 ---
 title: Max Heidegger AG
 description: "Max Heidegger AG is a garage that represents the brands BMW, Mini & Alpina in Liechtenstein. Recently I got to create some marketing videos for them. My first project with them was a documentary/promo video for their paint shop. After that we produced some product videos about BMW & Mini's latest and greatest cars."
-released: 202105021
+released: 20210502
 type: Video Production
 website: https://heidegger.world/
 

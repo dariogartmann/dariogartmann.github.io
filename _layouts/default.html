@@ -28,6 +28,7 @@ scripts:
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script src="{{ site.url }}/assets/js/vendor/zoom.min.js"></script>
         <script src="{{ site.url }}/assets/js/menu.js"></script>
+        <script src="{{ site.url }}/assets/js/scroll.js"></script>
         {% for js in page.scripts %}
             <script type="text/javascript" src="{{ js }}"></script>
         {% endfor %}
@@ -40,45 +41,47 @@ scripts:
                 Barba.Pjax.Dom.wrapperId = 'async-wrapper';
 
                 var FadeTransition = Barba.BaseTransition.extend({
-                start: function() {
-                    // As soon the loading is finished and the old page is faded out, let's fade the new page
-                    Promise
-                    .all([this.newContainerLoading, this.fadeOut()])
-                    .then(this.fadeIn.bind(this));
-                },
+                    start: function() {
+                        // As soon the loading is finished and the old page is faded out, let's fade the new page
+                        Promise
+                        .all([this.newContainerLoading, this.fadeOut()])
+                        .then(this.fadeIn.bind(this));
+                    },
 
-                fadeOut: function() {
-                    return $(this.oldContainer).animate({ opacity: '0' }).promise();
-                },
+                    fadeOut: function() {
+                        return $(this.oldContainer).animate({ opacity: '0' }).promise();
+                    },
 
-                fadeIn: function() {
-                    $(window).scrollTop(0);
-                    var _this = this;
-                    var $el = $(this.newContainer);
+                    fadeIn: function() {
 
-                    $(this.oldContainer).hide();
+                        $(window).scrollTop(0);
+                        var _this = this;
+                        var $el = $(this.newContainer);
 
-                    $el.css({
-                        visibility : 'visible',
-                        opacity : 0
-                    });
+                        $(this.oldContainer).hide();
 
-                    $el.animate({ opacity: 1 }, 400, function() {
-                    _this.done();
-                    });
-
-                    // Initialize Flickity
-                    var elements = document.querySelectorAll('.flickity_container');
-
-                    [].forEach.call(elements, function(elem) {
-                        var flkty = new Flickity( elem, {
-                            // options
-                            imagesLoaded: true,
-                            percentPosition: false 
+                        $el.css({
+                            visibility : 'visible',
+                            opacity : 0
                         });
-                    });
 
-                }
+                        $el.animate({ opacity: 1 }, 400, function() {
+                        _this.done();
+                        });
+
+                        // Initialize Flickity
+                        var elements = document.querySelectorAll('.flickity_container');
+
+                        [].forEach.call(elements, function(elem) {
+                            var flkty = new Flickity( elem, {
+                                // options
+                                imagesLoaded: true,
+                                percentPosition: false 
+                            });
+                        });
+
+                        resetScrollIndicator();
+                    }
                 });
 
                 Barba.Pjax.getTransition = function() {

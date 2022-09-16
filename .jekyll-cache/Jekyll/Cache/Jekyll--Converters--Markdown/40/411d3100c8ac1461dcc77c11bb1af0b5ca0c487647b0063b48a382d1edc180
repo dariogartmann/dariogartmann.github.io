@@ -1,0 +1,22 @@
+I"�<div class="flickity_container">
+    <img src="http://localhost:4000/assets/images/projects/blumen-schierscher/tulip-field.jpg" alt="Field of tulips" />
+    <img src="http://localhost:4000/assets/images/projects/blumen-schierscher/tulip-cutting.jpg" alt="A bulb being cut off a tulip" />
+    <img src="http://localhost:4000/assets/images/projects/blumen-schierscher/bouquet.jpg" alt="A tulip bouquet" />
+</div>
+
+<div class="full-width-container has-padding">
+    <article class="text-block flex">
+        <div class="half">
+            <h3>Information</h3>
+        </div>
+        <div class="half">
+            <p>This project started in late December 2020 and the last clip was recorded in late February of 2021. During this time the tulips have fully grown.<br />
+            I worked without a storyboard, just the idea of «following the tulips' life». I tried to include some transitions to show the passage of time. I'm especially happy with how the first turned out, where they plant the bulbs and cover them – and the camera – with soil. The view then emerges from the dirt to show how the watered tulips have started to grow.</p>
+        </div>
+    </article>
+</div>
+<div class="flickity_container">
+    <img src="http://localhost:4000/assets/images/projects/blumen-schierscher/flowers_digin.jpg" alt="Tulip bulbs being covered with soil. " />
+    <img src="http://localhost:4000/assets/images/projects/blumen-schierscher/flowers_comeout.jpg" alt="Emerging from the soil to show small grown tulips." />
+</div>
+:ET

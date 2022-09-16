@@ -39,32 +39,4 @@ $(document).ready(function(){
                 break;
         }
     }
-
-    /*
-    var $banner = $('.navbar');
-    var $win = $(window);
-    var winH = $win.height();
-
-    $win.on("scroll", function () {
-        if ($(this).scrollTop() >= 277) {
-            $banner.addClass("sticky");
-        } else {
-            $banner.removeClass("sticky");
-        }
-    }).on("resize", function(){ 
-       winH = $(this).height(); 
-    });
-    */
-
-    $(window).scroll(function() {
-        var scrollTop = $(window).scrollTop();
-        var imgPos = scrollTop / 2 + 'px';
-        $('main').find('.image-header').css('transform', 'translateY(' + imgPos + ')');
-    });
-
-    var isMobile = window.matchMedia("only screen and (max-width: 760px)");
-
-    if (isMobile.matches) {
-        $('.carousel-video').remove();
-    }
 });

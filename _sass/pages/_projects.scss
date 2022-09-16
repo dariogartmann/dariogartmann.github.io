@@ -39,6 +39,7 @@ span.tag {
 
 		.project__img {
 			overflow: hidden;
+			border-radius: 2px;
 		}
 
 		img {
@@ -78,12 +79,6 @@ span.tag {
 			}
 		}
 	}
-}
-
-.project__title {
-	text-align: center;
-	font-weight: 800;
-	font-size: 7rem;
 }
 
 // Images
@@ -185,8 +180,7 @@ figure.imagelist {
 		}
 	}
 
-	h2.project__title {
+	h2.underlined {
 		font-size: 3.2rem;
 	}
-
 }

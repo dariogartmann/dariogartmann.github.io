@@ -2,63 +2,21 @@
 layout: home
 ---
 <div class="async-container">
-    <section class="image-header home_banner">
-        <div class="container">
-            <h2>Making your stories come to life.</h2>
-            <a href="/projects/" class="button">View Projects</a>
-        </div>
-    </section>
-    <section class="full-width-section">
-        <div class="full-width-container has-padding">
-            <article class="text-block flex">
-                <div class="half">
-                    <h3>About Me</h3>
-                </div>
-                <div class="half">
-                    <p>
-                        I am 22 years old and currently studying Multimedia Production at <a target="_blank" class="fancylink" href="https://fhgr.ch">FHGR</a>. What started as a hobby, has now become my day-to-day activity. 
-                        <br/>
-                        In my spare time I love to travel and explore exciting new places – always carrying my camera. Head over to my Instagram for a more personal glimpse into my life. <br/><br/>
-                        Feel free to explore my portfolio or check out my two latest projects below.
-                    </p>
-                </div>
-            </article>
-        </div>
-    </section>
-    <section class="full-width-section">
-        <div class="full-width-container flex projectlist">
-            {% assign sortedProjects = (site.projects | sort: 'released') | reverse %}
-            {% for project in sortedProjects limit:2 %}
-            <article class="half project-container">
-                <a class="project" href="{{ project.url }}">
-                    <div class="project__img">
-                        <img src="{{site.url}}{{ project.featured-image }}" alt="{{project.title}}" />
-                    </div>
-                    <div class="project__info">
-                        <h3 class="project__title">{{ project.title }}</h3>
-                        <p class="type">{{ project.type }}</p>
-                    </div>
-                </a>
-            </article>
-            {% endfor %}
-        </div>
-        <aside class="spacer" style="display:block;height:55px;"></aside>
-    </section>
+    <section class="image_header home">
+        {% assign sortedProjects = (site.projects | sort: 'released') | reverse %}
+        {% for project in sortedProjects limit:1 %}
+        <div class="image_header--image" style="background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255, 0.8)), url({{site.url}}{{ project.featured-image }})"></div>
+        <div class="home_content">
+            <h2 class="underlined">{{ project.title }}</h2><br/>
+            <span class="tag">{{ project.type }}</span><br/><br/>
+            <a class="button" href="{{ project.url }}">View Project <i class="fa fa-chevron-right"></i></a>
 
-    <section class="full-width-section">
-        <div class="full-width-container has-padding">
-            <article class="text-block flex">
-                <div class="half">
-                    <h3>Contact</h3>
-                </div>
-                <div class="half">
-                    <p>
-                        Do you have an amazing video idea for your brand or product? <br/>
-                        Feel free to send me an email or contact me on Instagram on <a href="https://instagram.com/dariogartmann.ch" target="_blank" class="fancylink">@dariogartmann.ch</a>.
-                    </p><br/>
-                    <a href="mailto:mail@dariogartmann.ch" class="button projectlink">Send Mail <i class="fa fa-send"></i></a>
-                </div>
-            </article>
+        </div>
+        {% endfor %}
+        <div class="home_slider_indicator">
+            <div class="hsi_dot selected" data-projectindex="0"></div>
+            <div class="hsi_dot" data-projectindex="1"></div>
+            <div class="hsi_dot" data-projectindex="2"></div>
         </div>
     </section>
 </div>

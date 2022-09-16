@@ -1,0 +1,24 @@
+I"<div class="flickity_container">
+    <img src="http://localhost:4000/assets/images/projects/wedding-jeannine-gregor/A7_00909.jpg" alt="Newly wed couple holding hands" />
+    <img src="http://localhost:4000/assets/images/projects/wedding-jeannine-gregor/A7_00903.jpg" alt="Newly wed couple sitting" />
+    <img src="http://localhost:4000/assets/images/projects/wedding-jeannine-gregor/A7_00879.jpg" alt="Newly wed couple fun" />
+    <img src="http://localhost:4000/assets/images/projects/wedding-jeannine-gregor/A7_00850.jpg" alt="Newly wed couple kiss" />
+</div>
+
+<div class="full-width-container has-padding">
+    <article class="text-block flex">
+        <div class="half">
+            <h3>Information</h3>
+        </div>
+        <div class="half">
+            <p>Their wedding was quite spontaineous and secret. Only their two best men were informed. The video and photographs were published on a website. They then sent out a christmas card, with a link to the website. Quite the christmas surprise! <br />Thanks again for letting me be a part of it. It was a wonderful day.</p>
+        </div>
+    </article>
+</div>
+
+<div class="flickity_container">
+    <img src="http://localhost:4000/assets/images/projects/wedding-jeannine-gregor/A7_09899.jpg" alt="Couple holding hands with sparkler" />
+    <img src="http://localhost:4000/assets/images/projects/wedding-jeannine-gregor/A7_09922.jpg" alt="Couple laughing" />
+    <img src="http://localhost:4000/assets/images/projects/wedding-jeannine-gregor/A7_00248.jpg" alt="Couple holding sparkler" />
+</div>
+:ET

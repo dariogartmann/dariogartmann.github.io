@@ -1,0 +1,56 @@
+I"k
+<div class="flickity_container">
+    <img src="http://localhost:4000/assets/images/journals/new-zealand/cliff.jpg" alt="Cliffs" />
+    <img src="http://localhost:4000/assets/images/journals/new-zealand/punakaiki.jpg" alt="Punakaiki" />
+    <img src="http://localhost:4000/assets/images/journals/new-zealand/punakaiki2.jpg" alt="Punakaiki" />
+    <img src="http://localhost:4000/assets/images/journals/new-zealand/tjessa.jpg" alt="Punakaiki" />
+    <img src="http://localhost:4000/assets/images/journals/new-zealand/wave-crashing.jpg" alt="Ship" />
+</div>
+
+<div class="full-width-container has-padding">
+    <article class="text-block flex">
+        <div class="half">
+            <h3>Wellington — Queenstown</h3>
+        </div>
+        <div class="half">
+            <p>Upon arrival in Wellington I immediatly met the group. We got drinks and burgers at a bar. Since I had been on the road for 40 hours at that point, I went to bed pretty early.<br /><br />
+            The next morning we packed our bags in our little van and started the journey by taking the ferry to Picton on the South Island.</p>
+        </div>
+    </article>
+</div>
+
+<figure class="imagelist">
+    <img src="http://localhost:4000/assets/images/journals/new-zealand/town.jpg" alt="Queenstown Panorama" />
+</figure>
+
+<div class="full-width-container has-padding">
+    <article class="text-block flex">
+        <div class="half">
+            <h3>Around the South-Island</h3>
+        </div>
+        <div class="half">
+            <p>Starting in Picton, we made our way to Abel-Tasman National Park, and from there on headed South.</p>
+        </div>
+    </article>
+</div>
+
+<div class="youtube">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45120.351505880244!2d168.65683545771907!3d-45.024479499006105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa9d51df1d7a8de5f%3A0x500ef868479a600!2sQueenstown%2C+New+Zealand!5e0!3m2!1sen!2sch!4v1544363083869" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+</div>
+
+<div class="full-width-container has-padding">
+    <article class="text-block flex">
+        <div class="half">
+            <h3>The Video</h3>
+        </div>
+        <div class="half">
+            <p>I was having such a great time with the group, I didn't press the record button as much as I had actually planned. Nonetheless, I still managed to put together a short clip with some impressions.</p>
+        </div>
+    </article>
+</div>
+
+<div class="youtube">
+<iframe src="https://www.youtube.com/embed/nzTBBg6jJOA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+
+:ET
