@@ -29,7 +29,7 @@ layout: project
 </div>
 
 <figure class="imagelist">
-    <img class="full" src="{{site.url}}/assets/images/projects/synchro-duet-lie/underwater-lowres2.gif" data-action="zoom"  alt="Spinning underwater" />
+    <img class="full" src="{{site.url}}/assets/images/projects/synchro-duet-lie/underwater-lowres2.gif" alt="Spinning underwater" />
 </figure>
 
 <div class="full-width-container has-padding">

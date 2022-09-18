@@ -3,8 +3,6 @@
 
 @import "libs/normalize";
 @import "libs/skeleton";
-@import "libs/lumos";
-@import "libs/zoom";
 @import "libs/lity";
 @import "libs/flickity";
 
@@ -67,32 +65,6 @@ img {
 }
 .fancylink:hover:before {
     right: 0; 
-}
-
-.image-header {
-    background-position: center;
-    background-size: cover;
-    min-height: 512px;
-    position: relative;
-
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-
-    h2 {
-        color: $white;
-    }
-}
-
-@media (max-width: 650px) {
-    .image-header {
-        min-height: 320px;
-    }
-
-}
-
-.rounded {
-    border-radius: 2px 2px 0 0;
 }
 
 .text-center {

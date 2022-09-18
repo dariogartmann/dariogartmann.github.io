@@ -3,11 +3,6 @@ footer.default-footer {
     bottom: 0;
     width: 100%; 
 
-    .footer_contactinfo {
-        padding-top: 75px;
-        padding-bottom: 25px;
-    }
-
     .footer_copyright {
         padding-bottom: 25px;
         padding-top: 25px;
@@ -16,37 +11,6 @@ footer.default-footer {
 
         a {
             margin-left: 15px;
-        }
-    }
-
-    .footer_project {
-        background-size: cover;
-        background-position: center;
-        min-height: 300px;
-
-        display: flex;
-        align-items:center;
-        justify-content: center;
-
-        h3 {
-            color: $white;
-            position: relative;
-            z-index: 2;
-        }
-
-        h3:before {
-            content: "";
-            position: absolute;
-            background-color: rgba($primary, 0.75);
-            left: 0;
-            bottom: 10%;
-            right: 100%;
-            top: 60%;
-            z-index: -1;
-            transition: right 300ms ease-in-out; 
-        }
-        &:hover h3:before {
-            right: 0; 
         }
     }
 
@@ -65,13 +29,6 @@ footer.default-footer {
 
 
 @media (max-width: 650px) {
-    footer.default-footer .footer_project {
-        width: 100%;
-        height: 200px;
-        min-height: 0;
-        padding: 25px;
-    }
-
     .footer_copyright {
         text-align: center;
 

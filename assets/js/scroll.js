@@ -1,20 +1,10 @@
-document.addEventListener("DOMContentLoaded", function(event) {
-    // smooth scrolling for anchors with class="scroll"
-    document.querySelectorAll('a[href^="#"].scroll').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
+let indicatorContainer;
+let indicatorFill;
+let totalIndicatorHeight;
     
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth',
-                block: 'center'
-            });
-        });
-    });
-
+document.addEventListener("DOMContentLoaded", function(event) {
     // scroll indicator part
-    let indicatorContainer = document.getElementsByClassName('scroll-indicator')[0];
-    let indicatorFill = document.getElementById('scrollposition');
-    let totalIndicatorHeight = indicatorContainer.clientHeight;
+    resetScrollIndicator();
 
     // add scroll listener
     window.addEventListener('scroll', function(event) {
@@ -38,8 +28,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
 
     function resetScrollIndicator(){
-        totalIndicatorHeight = document.getElementsByClassName('scroll-indicator')[0].clientHeight;
+        indicatorContainer = document.getElementsByClassName('scroll-indicator')[0];
         indicatorFill = document.getElementById('scrollposition');
+        totalIndicatorHeight = indicatorContainer.clientHeight;
 
         updateIndicator(0);
     }

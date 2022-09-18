@@ -81,8 +81,12 @@ h2.underlined::before {
     }
 }
 
-.gray {
-    background-color: lighten($accent, 25);
+.background--gray {
+    background-color: $lightgray;
+}
+
+.background--gradient {
+    background: linear-gradient(to bottom, $white, $lightgray);
 }
 
 /* Smaller than phablet */

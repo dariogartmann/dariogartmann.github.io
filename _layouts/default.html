@@ -1,6 +1,11 @@
 ---
 scripts:
  - /assets/js/vendor/yall.min.js
+ - /assets/js/menu.js
+ - /assets/js/scroll.js
+ - /assets/js/slider.js
+ - /assets/js/vendor/flickity.min.js
+ - /assets/js/vendor/lity.min.js
 ---
 <!DOCTYPE html>
 <html>
@@ -10,65 +15,62 @@ scripts:
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no" />
         <meta name="author" content="Dario Gartmann" />
-        <meta name="keywords" content="webdesign, film production, videographer, photographer, rheintal, schweiz, switzerland, swiss, quality, designer, creative, freelancer, dario gartmann" />
+        <meta name="keywords" content="film, kameramann, film production, videographer, video editor, creative, freelancer" />
         <meta name="theme-color" content="#222">
 
         <link rel="shortcut icon" type="image/png" href="{{site.url}}/favicon.png"/>
         <link rel="stylesheet" href="{{ site.url }}/assets/css/main.css?v={{site.version}}" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js" type="text/javascript"></script>
+        <script src="https://unpkg.com/@barba/core"></script>
+        <script src="https://unpkg.com/gsap@latest/dist/gsap.min.js"></script>
 		<script src="https://use.fontawesome.com/f0ef56809a.js"></script>
     </head>
 
     <body class="{% if page.featured-image %}has-featured-image{% endif %}">
         {% include header.html %}
-        <main class="default-content" id="async-wrapper">
-            {{ content }}
+        <main class="default-content" data-barba="wrapper" id="async-wrapper">
+            {{ content }} 
         </main>
         {% include footer.html %}
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <script src="{{ site.url }}/assets/js/vendor/zoom.min.js"></script>
-        <script src="{{ site.url }}/assets/js/menu.js"></script>
-        <script src="{{ site.url }}/assets/js/scroll.js"></script>
-        {% for js in page.scripts %}
-            <script type="text/javascript" src="{{ js }}"></script>
-        {% endfor %}
         {% for js in layout.scripts %}
             <script type="text/javascript" src="{{ js }}"></script>
         {% endfor %}
+        {% for js in page.scripts %}
+            <script type="text/javascript" src="{{ js }}"></script>
+        {% endfor %}
+
         <script>
-            window.onload = function() {
-                Barba.Pjax.Dom.containerClass = 'async-container';
-                Barba.Pjax.Dom.wrapperId = 'async-wrapper';
-
-                var FadeTransition = Barba.BaseTransition.extend({
-                    start: function() {
-                        // As soon the loading is finished and the old page is faded out, let's fade the new page
-                        Promise
-                        .all([this.newContainerLoading, this.fadeOut()])
-                        .then(this.fadeIn.bind(this));
-                    },
-
-                    fadeOut: function() {
-                        return $(this.oldContainer).animate({ opacity: '0' }).promise();
-                    },
-
-                    fadeIn: function() {
-
-                        $(window).scrollTop(0);
-                        var _this = this;
-                        var $el = $(this.newContainer);
-
-                        $(this.oldContainer).hide();
-
-                        $el.css({
-                            visibility : 'visible',
-                            opacity : 0
+            barba.init({
+                transitions: [{
+                    name: 'opacity-transition',
+                    leave(data) {
+                        return gsap.to(data.current.container, {
+                            duration: 0.2,
+                            opacity: 0
                         });
-
-                        $el.animate({ opacity: 1 }, 400, function() {
-                        _this.done();
+                    },
+                    enter(data) {
+                        return gsap.from(data.next.container, {
+                            duration: 0.2,
+                            opacity: 0
                         });
-
+                    }
+                }],
+                views: [{
+                    namespace: 'home',
+                    beforeEnter() {
+                       window.scrollTo({ top: 0 });
+                    },
+                    afterEnter() {
+                        initSlider();
+                    }
+                },
+                {
+                    namespace: 'default',
+                    beforeEnter() {
+                        window.scrollTo({ top: 0 });
+                    },
+                    afterEnter() {
                         // Initialize Flickity
                         var elements = document.querySelectorAll('.flickity_container');
 
@@ -79,17 +81,11 @@ scripts:
                                 percentPosition: false 
                             });
                         });
-
-                        resetScrollIndicator();
                     }
-                });
+                }]
+            });
 
-                Barba.Pjax.getTransition = function() {
-                    return FadeTransition;
-                };
 
-                Barba.Pjax.start();
-            }
         </script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-71586322-1"></script>
         <script>

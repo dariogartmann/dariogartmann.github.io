@@ -1,7 +1,7 @@
 .home_slider_indicator {
     position: absolute;
     width: 100%;
-    bottom: -54px;
+    bottom: 45px;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -21,9 +21,18 @@
 		cursor: pointer;
 		transition: all 300ms ease;
 
-        &.selected {
+        &.active {
             background-color: $black;
         }
+    }
+}
+
+.home_slider_item {
+    display: none;
+    transition: all 300ms ease;
+
+    &.active {
+        display: flex;
     }
 }
 
