@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,500,700,800,900');
-
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;1,400&display=swap');
 
 body {
-    font-family: 'Open Sans', Verdana, sans-serif;
+    font-family: 'Poppins', Verdana, sans-serif;
     color: $black;
+    font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -21,7 +20,7 @@ h3 {
 p {
     max-width: 100%;
     line-height: 2.5rem;
-    font-weight: light;
+    font-weight: 400;
 }
 
 a {
@@ -29,3 +28,4 @@ a {
     text-decoration: none;
     color: $primary;
 }
+
