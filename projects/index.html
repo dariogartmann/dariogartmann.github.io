@@ -5,7 +5,7 @@ description: "The best videos and projects I have made, all in one spot. Promo V
 ---
 <section class="full-width-section">
     <div class="full-width-container flex projectlist">
-        {% assign sortedProjects = (site.projects | sort: 'released') | reverse %}
+        {% assign sortedProjects = site.projects | sort: 'released' | reverse %}
         {% for project in sortedProjects %}
         <article class="half project-container">
             <a class="project" href="{{ project.url }}">

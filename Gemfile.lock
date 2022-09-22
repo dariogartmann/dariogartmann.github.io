@@ -9,7 +9,8 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
-    ffi (1.15.5-x64-mingw-ucrt)
+    ffi (1.15.5)
+    ffi (1.15.5-x64-unknown)
     forwardable-extended (2.6.0)
     http_parser.rb (0.8.0)
     i18n (1.12.0)
@@ -61,7 +62,8 @@ GEM
     webrick (1.7.0)
 
 PLATFORMS
-  x64-mingw-ucrt
+  universal-darwin-21
+  x64-unknown
 
 DEPENDENCIES
   jekyll
@@ -69,7 +71,7 @@ DEPENDENCIES
   webrick
 
 RUBY VERSION
-   ruby 3.1.2p20
+   ruby 2.6.8p205
 
 BUNDLED WITH
    2.3.22

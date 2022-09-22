@@ -62,7 +62,7 @@ layout: default
             </article>
         </div>
         <div class="full-width-container flex projectlist">
-            {% assign sortedProjects = (site.projects | sample:4 ) | where_exp: "proj", "proj.title != page.title" | reverse %}
+            {% assign sortedProjects = site.projects | sample:4  | where_exp: "proj", "proj.title != page.title" | reverse %}
             {% for project in sortedProjects limit:2 %}
             <article class="half project-container">
                 <a class="project" href="{{ project.url }}">
