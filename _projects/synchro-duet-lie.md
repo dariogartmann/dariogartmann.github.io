@@ -7,14 +7,17 @@ released: 20200201
 type: Promo Video
 youtube-id: J4HQJuGD7g0
 tags: ['synchronized swimming', 'underwater', 'promo']
-featured-image: "/assets/images/projects/synchro-duet-lie/lights.jpg"
+featured-image: "/assets/images/projects/synchro-duet-lie/lights2.jpg"
 layout: project
 ---
 
 <div class="flickity_container">
-    <img src="{{ site.url }}/assets/images/projects/synchro-duet-lie/review.jpg" alt="Synchronised swimmers reviewing their performance with trainer." />
-    <img src="{{ site.url }}/assets/images/projects/synchro-duet-lie/roadtotokyo.png" alt="Road to Tokyo Banner" />
+    <img src="{{ site.url }}/assets/images/projects/synchro-duet-lie/underwater-pics/underwater-synchro.jpg" alt="Synchronised swimmers posing underwater" />
+    <img src="{{ site.url }}/assets/images/projects/synchro-duet-lie/underwater-pics/underwater-synchro-2.jpg" alt="Synchronised swimmers posing underwater" />
+    <img src="{{ site.url }}/assets/images/projects/synchro-duet-lie/underwater-pics/underwater-synchro-3.jpg" alt="Synchronised swimmer duet posing underwater" />
+    <img src="{{ site.url }}/assets/images/projects/synchro-duet-lie/underwater-pics/drowning.jpg" alt="Synchronised swimmer duet posing underwater" />
 </div>
+
 
 <div class="full-width-container has-padding">
     <article class="text-block flex">
@@ -28,25 +31,9 @@ layout: project
     </article>
 </div>
 
-<figure class="imagelist">
-    <img class="full" src="{{site.url}}/assets/images/projects/synchro-duet-lie/underwater-lowres2.gif" alt="Spinning underwater" />
-</figure>
-
-<div class="full-width-container has-padding">
-    <article class="text-block flex">
-        <div class="half">
-            <h3>Underwater Pictures</h3>
-        </div>
-        <div class="half">
-            <p>If you've got an underwater housing, why not use it to take some cool pictures!
-            </p>
-        </div>
-    </article>
-</div>
-
 <div class="flickity_container">
-    <img src="{{ site.url }}/assets/images/projects/synchro-duet-lie/underwater-pics/underwater-synchro.jpg" alt="Synchronised swimmers posing underwater" />
-    <img src="{{ site.url }}/assets/images/projects/synchro-duet-lie/underwater-pics/underwater-synchro-2.jpg" alt="Synchronised swimmers posing underwater" />
-    <img src="{{ site.url }}/assets/images/projects/synchro-duet-lie/underwater-pics/underwater-synchro-3.jpg" alt="Synchronised swimmer duet posing underwater" />
-    <img src="{{ site.url }}/assets/images/projects/synchro-duet-lie/underwater-pics/drowning.jpg" alt="Synchronised swimmer duet posing underwater" />
+    <img src="{{ site.url }}/assets/images/projects/synchro-duet-lie/review.jpg" alt="Synchronised swimmers reviewing their performance with trainer." />
+    <img src="{{ site.url }}/assets/images/projects/synchro-duet-lie/roadtotokyo.png" alt="Road to Tokyo Banner" />
 </div>
+
+

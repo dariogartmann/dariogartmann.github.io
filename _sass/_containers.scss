@@ -5,6 +5,10 @@
     &.has-padding {
         padding: 128px 96px;
     }
+
+    &.has-padding-bottom {
+        padding: 0 96px 128px 96px;
+    }
 }
 
 .title_header {
@@ -36,6 +40,7 @@
         z-index: -3;
         background-position: center;
         background-size: cover;
+        border-radius: 2px;
     }
 }
 
@@ -68,6 +73,10 @@ h2.underlined::before {
 
     .third {
         width: 33.3333%;
+
+        p {
+            padding-right: 16px;
+        }
     }
 
     .quarter {
@@ -91,6 +100,11 @@ h2.underlined::before {
     background: linear-gradient(to bottom, $white, $lightgray);
 }
 
+.background--lighten {
+    background-color: lighten($white, 3);
+}
+
+
 /* Smaller than phablet */
 @media (max-width: 550px) {
     .full-width-container.flex {
@@ -100,6 +114,14 @@ h2.underlined::before {
         .half { width: 100%; margin-bottom: 32px; }
         .quarter { width: 100%; margin-bottom: 32px; }
         .full { margin-bottom: 32px; }
+    }
+    .flex .third {
+        width: 100%;
+        margin-bottom: 32px;
+
+        p {
+            padding-right: 0;
+        }
     }
 
     .full-width-container {
@@ -177,6 +199,10 @@ h2.underlined::before {
     &.has-padding {
         padding: 96px 32px;
     }
+    &.has-padding-bottom {
+        padding: 0 32px 96px 32px;
+    }
+
     }
 
     .image_header {

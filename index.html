@@ -5,7 +5,7 @@ layout: default
     {% assign sortedProjects = site.projects | sort: 'released' | reverse %}
         {% for project in sortedProjects limit:3 %}
         <section class="image_header home home_slider_item">
-            <div class="image_header--image" style="background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255, 0.8)), url({{site.url}}{{ project.featured-image }})"></div>
+            <div class="image_header--image" style="background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(0,0,0, 0.8)), url({{site.url}}{{ project.featured-image }})"></div>
             <div class="home_content">
                 <h2 class="underlined">{{ project.title }}</h2><br/>
                 <span class="tag">{{ project.type }}</span><br/><br/>
