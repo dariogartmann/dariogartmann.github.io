@@ -6,16 +6,21 @@
 	justify-content: space-between;
 }
 
+span.tag, span.tagline {
+	color: darken($accent, 10%);
+	font-size: 1.2rem;
+	display: block;
+	margin-top: 8px;
+}
 span.tag {
-	color: $lightgray;
-	text-transform: uppercase;
-	font-size: 1rem;
-
+	display: inline-block;
+	
 	&:before {
 		content: '#';
-		display: inline-block;
+		display: inline-block !important;
 	}
 }
+
 
 .half.project-container {
 	width: calc(50% - 16px);

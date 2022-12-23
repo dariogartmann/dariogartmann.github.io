@@ -2,32 +2,12 @@
 layout: page
 title: About Me
 description: "About Me"
-featured-image: "/assets/images/dario_gartmann.jpg"
+tagline: "Behind the Scenes"
 ---
-<section class="full-width-section">
-    <div class="full-width-container has-padding">
-        <article class="text-block flex">
-            <div class="half">
-                <h3>Nice to meet you!</h3>
-            </div>
-            <div class="half">
-                <p>
-                    I am 24 years old and currently studying Multimedia Production at <a target="_blank" class="fancylink" href="https://fhgr.ch">FHGR</a>. What started out as a hobby roughly five years ago, has now become my day-to-day activity. 
-                    <br/><br/>
-                    What excites me most about filmmaking is telling stories that would otherwise be unheard of. I strive to create beautiful imagery that's inspiring and fits to the subject. 
-                    <br/><br/>
-                    In my spare time I love to travel and explore exciting new places – always carrying my camera. Head over to my Instagram for a more personal glimpse into my life. 
-                </p>
-            </div>
-        </article>
-    </div>
-</section>
 
 <section class="full-width-section">
-    <div class="flickity_container">
-        <img src="{{ site.url }}/assets/images/dario-gartmann-lumnezia.jpg" alt="Dario Gartmann filming at openair." />
-        <img src="{{ site.url }}/assets/images/dario-gartmann-lumnezia-2.jpg" alt="Dario Gartmann filming at openair." />
-        <img src="{{ site.url }}/assets/images/dario-gartmann-wald.jpg" alt="Dario Gartmann filming a project in the forest." />
+    <div class="full-width-container">
+        <img src="/assets/images/dario-front.jpg" alt="Image of Dario Gartmann" />
     </div>
 </section>
 
@@ -35,15 +15,44 @@ featured-image: "/assets/images/dario_gartmann.jpg"
     <div class="full-width-container has-padding">
         <article class="text-block flex">
             <div class="half">
-                <h3>Contact Me</h3>
+                <h3>Nice to meet you!</h3>
             </div>
             <div class="half">
                 <p>
-                    Do you want to discuss a video idea for your brand or product? <br/>
-                    Feel free to send me an email or contact me on Instagram on <a href="https://instagram.com/dariogartmann.ch" target="_blank" class="fancylink">@dariogartmann.ch</a>.
-                </p><br/>
-                <a href="mailto:mail@dariogartmann.ch" class="button projectlink">Send Mail <i class="fa fa-send"></i></a>
+                    I am 24 years old and currently in my last semester of the Bachelor's degree Multimedia Production at <a target="_blank" class="fancylink" href="https://fhgr.ch">FHGR</a>. What started out as a hobby roughly five years ago, has now become my day-to-day activity. 
+                    <br/><br/>
+                    What excites me most about filmmaking is telling stories that would otherwise be unheard of. As a filmmaker I get a glimpse into various fields. I always strive to create beautiful imagery that's inspiring and fits the subject. 
+                    <br/><br/>
+                    In my spare time I love to travel and explore exciting new places – always carrying my camera. Head over to my Instagram for a more personal glimpse into my life. 
+                </p>
+                <a href="https://instagram.com/dario.gartmann" target="_blank" class="button projectlink">@dario.gartmann</a>
             </div>
         </article>
+    </div>
+</section>
+
+<section class="full-width-section" style="padding-top: 128px">        
+    <div class="full-width-container">
+        <article class="text-block flex">
+            <div class="half">
+                <h3>Some of my work:</h3>                
+            </div>
+        </article>
+    </div>
+    <div class="full-width-container flex projectlist">
+        {% assign sortedProjects = site.projects | sample:4  | where_exp: "proj", "proj.title != page.title" | reverse %}
+        {% for project in sortedProjects limit:2 %}
+        <article class="half project-container">
+            <a class="project" href="{{ project.url }}">
+                <div class="project__img">
+                    <img src="{{site.url}}{{ project.featured-image }}" alt="{{project.title}}" />
+                </div>
+                <div class="project__info">
+                    <h3 class="project__title">{{ project.title }}</h3>
+                    <p class="type">{{ project.type }}</p>
+                </div>
+            </a>
+        </article>
+        {% endfor %}
     </div>
 </section>

@@ -7,12 +7,18 @@ layout: default
             <div class="image_header--image" style="background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(0,0,0,0.8)), url({{ page.featured-image }})"></div>
             <div class="container text-center">
                 <h2 class="underlined">{{ page.title }}</h2>
+                {% if page.subtitle %}
+                    <span class="tag">{{ page.subtitle }}</span>
+                {% endif %}
             </div>
         </section>
     {% else %}
         <section class="title_header">
             <div class="container text-center">
                 <h2 class="underlined">{{ page.title }}</h2>
+                {% if page.tagline %}
+                    <span class="tagline">{{ page.tagline }}</span>
+                {% endif %}
             </div>
         </section>
     {% endif %}
