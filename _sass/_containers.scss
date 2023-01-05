@@ -11,6 +11,36 @@
     }
 }
 
+.full-width-section {
+    width: 100%;
+    margin: 0;
+    position: relative;
+    background-color: $white;
+}
+
+.photo-section {
+    position: relative;
+    background-color: $white;
+}
+
+.text-block {
+    p {
+        color: $black;
+        margin-bottom: 0;
+        line-height: 3.25rem;
+        font-size: 2rem;
+        font-weight: 400;
+    }   
+
+    h3, h2 {
+        letter-spacing: 1px;
+        color: $black;
+        line-height: 3.25rem;
+        font-size: 3.25rem;
+        font-weight: 800;
+    }
+}
+
 .title_header {
     display: flex;
     flex-flow: row wrap;
@@ -75,6 +105,7 @@ h2.underlined::before {
     display: flex;
     flex-flow: row wrap;
 
+    // Content columns classes
     .third {
         width: 33.3333%;
 
@@ -85,6 +116,10 @@ h2.underlined::before {
 
     .quarter {
         width: 25%;
+
+        img {
+            margin: 0 auto;
+        }
     }
 
     .half {
@@ -94,8 +129,17 @@ h2.underlined::before {
     .full {
         width: 100%;
     }
+
+    // Alignment classes
+    &.flex--horizontalcenter {
+        justify-content: center;
+    }
+    &.flex--verticalcenter {
+        align-items: center;
+    }
 }
 
+// Color background
 .background--gray {
     background-color: $lightgray;
 }
@@ -104,11 +148,7 @@ h2.underlined::before {
     background: linear-gradient(to bottom, $white, $lightgray);
 }
 
-.background--lighten {
-    background-color: lighten($white, 3);
-}
-
-
+// Mobile queries
 /* Smaller than phablet */
 @media (max-width: 550px) {
     .full-width-container.flex {
@@ -128,42 +168,21 @@ h2.underlined::before {
         }
     }
 
+    .flex .quarter {
+        width: 50%;
+        margin-bottom: 32px;
+
+        img {
+            margin: 0 auto;
+        }
+    }
+
     .full-width-container {
         padding: 0 32px;
     }
 
     .title_header {
         height: 312px;
-    }
-}
-
-.full-width-section {
-    width: 100%;
-    margin: 0;
-    position: relative;
-    background-color: $white;
-}
-
-.photo-section {
-    position: relative;
-    background-color: $white;
-}
-
-.text-block {
-    p {
-        color: $black;
-        margin-bottom: 0;
-        line-height: 3.25rem;
-        font-size: 2rem;
-        font-weight: 400;
-    }   
-
-    h3, h2 {
-        letter-spacing: 1px;
-        color: $black;
-        line-height: 3.25rem;
-        font-size: 3.25rem;
-        font-weight: 800;
     }
 }
 
@@ -198,7 +217,6 @@ h2.underlined::before {
 
   .full-width-container {
     padding: 0 32px;
-
 
     &.has-padding {
         padding: 96px 32px;

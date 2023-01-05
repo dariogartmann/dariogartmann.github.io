@@ -14,8 +14,8 @@ layout: default
                 {% endfor %}
             {% endif %}
                 <br/>
-                {% if page.youtube-id %}
-                <a class="button projectlink" href="https://youtu.be/{{ page.youtube-id }}" data-lity>Watch Video <i class="fa fa-angle-right"></i></a>
+                {% if page.videourl %}
+                <a class="button projectlink" href="{{ page.videourl }}" data-lity>Watch Video <i class="fa fa-angle-right"></i></a>
                 {% endif %}
                 {% if page.website %}
                     <a class="button projectlink" href="{{ page.website }}" target="_blank">Visit Website <i class="fa fa-angle-right"></i></a>

@@ -3,7 +3,7 @@ title: Jeannine & Gregor
 description: "Jeannine and Gregor asked me to capture their wedding day on photo and video."
 released: 20201201
 type: Wedding
-youtube-id: X20Y0kzdzZo
+videourl: https://youtu.be/X20Y0kzdzZo
 tags: ['Wedding', 'Family', 'Videography', 'Photography']
 featured-image: "/assets/images/projects/wedding-jeannine-gregor/banner.jpg"
 layout: project

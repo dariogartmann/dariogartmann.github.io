@@ -5,7 +5,7 @@ description: "Marluce and Lara are a synchronised swimming duet from Liechtenste
  to find sponsors.<br/><br/>"
 released: 20200201
 type: Promo Video
-youtube-id: J4HQJuGD7g0
+videourl: https://youtu.be/J4HQJuGD7g0
 tags: ['synchronized swimming', 'underwater', 'promo']
 featured-image: "/assets/images/projects/synchro-duet-lie/lights2.jpg"
 layout: project

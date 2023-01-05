@@ -3,7 +3,7 @@ title: Blumen Schierscher
 description: "Various videos for a local cut flower production and flower store. They grow all of their flowers by themselves in Schaan, Liechtenstein.<br/><br/>Over the last few months I got to create various videos for them."
 released: 20210301
 type: Video Production
-youtube-id: Pq3260xgwQk
+videourl: https://youtu.be/Pq3260xgwQk
 tags: ['Tulips', 'Flower Production', 'Promo']
 featured-image: "/assets/images/projects/blumen-schierscher/tulips.jpg"
 layout: project
@@ -26,10 +26,6 @@ layout: project
         </div>
     </article>
 </div>
-<div class="flickity_container">
-    <img src="{{ site.url }}/assets/images/projects/blumen-schierscher/flowers_digin.jpg" alt="Tulip bulbs being covered with soil. " />
-    <img src="{{ site.url }}/assets/images/projects/blumen-schierscher/flowers_comeout.jpg" alt="Emerging from the soil to show small grown tulips." />
-</div>
 
 <div class="full-width-container has-padding">
     <article class="text-block flex">
@@ -42,3 +38,9 @@ layout: project
         </div>
     </article>
 </div>
+
+<div class="flickity_container">
+    <img src="{{ site.url }}/assets/images/projects/blumen-schierscher/flowers_digin.jpg" alt="Tulip bulbs being covered with soil. " />
+    <img src="{{ site.url }}/assets/images/projects/blumen-schierscher/flowers_comeout.jpg" alt="Emerging from the soil to show small grown tulips." />
+</div>
+
